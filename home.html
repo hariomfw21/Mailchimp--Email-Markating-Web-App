@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css" />
+    <style>
+      /* body {
+        font-family: "Lato", sans-serif;
+      } */
+
+      .sidenav {
+
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left:0;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 20px;
+
+      }
+
+      .sidenav a {
+
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+        display: block;
+        transition: 0.3s;
+
+      }
+
+      /* side bar p tag */
+
+      .side-barP {
+        padding-left: 1.9rem;
+      }
+
+      .side-barh2 {
+
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+        display: block;
+        transition: 0.3s;
+
+      }
+
+      .side-barh2:hover {
+        color: #007c89;
+      }
+
+      .sidenav a:hover {
+        color: #007c89;
+      }
+
+      /* inner side nav */
+      /* inner side nav */
+
+      .innerside-nav{
+
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left:520px;
+        background-color: #f6f6f4;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 20px;
+      }
+
+
+      .ullist-innernev{
+        list-style-type: none;
+        padding-top: 5.2rem;
+        padding-right: 20px;
+      }
+
+      .innernevAnc{
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+      }
+
+      .innernevAnc:hover{
+        color: #007c89;
+      }
+
+      .innernavp{
+        color:#727070 ;
+      }
+
+
+
+      /* inner side nav */
+      /* inner side nav */
+
+
+      
+    </style>
+  </head>
+  <body>
+    <div id="Header">
+      <div class="nev-bar">
+        <button onmouseover="openNav()" class="nev-barAncer">Product</button>
+        <button onmouseover="openNavRes()" class="nev-barAncer">
+          Resource
+        </button>
+        <button onmouseover="openNavIns()" class="nev-barAncer">Inspration</button>
+        <button onmouseover="openNavPri()" class="nev-barAncer">Pricing</button>
+      </div>
+      <div class="nev-bar">
+        <img 
+        src="/pics and logo/Green_Bird_Creative_Business_Logo_Design-removebg-preview (1).png" alt="logo" />
+        <h2>WMB</h2>
+      </div>
+      <div class="nev-bar">
+        <div>
+         <p>Sales:</p>
+         <p >+1 (800) 315-5939</p>   
+        </div>
+        <div>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            
+        </div>
+        <div>
+            <button>Login</button>
+            <button>Sign up</button>
+        </div>
+        
+      </div>
+    </div>
+    <div>
+    </div>
+
+    <!--  side nav -->
+
+    <div id="mySidenav" class="sidenav" onmouseleave="closeNav()">
+      <div class="nev-bar">
+        <button onmouseover="openNav()" class="nev-barAncer">Product</button>
+        <button onmouseover="openNavRes()" class="nev-barAncer">
+          Resource
+        </button>
+        <button onmouseover="openNavIns()" class="nev-barAncer">
+          Inspration
+        </button>
+        <button onmouseover="openNavPri()" class="nev-barAncer">Pricing</button>
+      </div>
+      <br />
+      <div id="resource-nav">
+
+        <!-- code in script -->
+        <!-- code in script -->
+        <!-- code in script -->
+        <!-- code in script -->
+      
+      </div>
+    </div>
+ 
+    <!-- side nav ^^^^ -->
+   
+
+    <div id="myinnerreside-nav" class="innerside-nav"  onmouseleave="closeInnerNav()">
+
+        <div id="innerresorce-nav">
+
+            <ul class="ullist-innernev">
+              <li>
+                <a class="innernevAnc" href="#">Website</a>
+                <p class="innernavp">Create a free website that comes with built-in markating tool</p>
+              </li>
+
+              <br>
+
+                <li>
+                 <a class="innernevAnc" href="#">Online Store</a>
+                 <p class="innernavp">Get beautiful onbrand design made for you with the power Of AI</p>
+                </li>
+
+                <br>
+
+              <li>
+                 <a class="innernevAnc" href="#">Dynamic Content</a>
+                 <p class="innernavp">Pretionlise Individual content Block with You Emails.</p>
+              </li>
+
+              <br>
+
+              <li>
+                 <a class="innernevAnc" href="#">Subject Line Helper</a>
+                 <p class="innernavp">Get real-time feedback on how to refine your subject lines.</p>
+              </li>
+
+              <br>
+
+              <li>
+                 <a class="innernevAnc" href="#">Campaign Templates</a>
+                 <p class="innernavp">100+ pre-designed email and landing page templates that fit any message.</p> 
+              </li>
+
+              <br>
+
+              <hr>
+
+              
+
+            </ul>
+
+
+           
+           
+
+           
+           
+
+           
+
+           
+
+
+
+        </div>
+
+    </div>
+    
+  </body>
+</html>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "520px";
+    document.querySelector("#resource-nav").innerHTML = `
+    <p class="side-barP" style="color: #727070">WE'ALL HELP YOU</p>
+      <a href="#" onmouseover="openinnernav()">Get Your Buisness Online ></a>
+      <a href="#">Market Your Buisness ></a>
+      <br />
+      <br />
+      <hr />
+      <p class="side-barP" style="color: #727070">PLATFORM FEATURES</p>
+      <a href="#">Aduence Managemnt ></a>
+      <a href="#">Creative Tool ></a>
+      <a href="#">Markating Automation></a>
+      <a href="#">Insight & Analitics</a>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <p class="side-barP" style="color: #727070">NOT SURE WHRER TO START</p>
+      <a href="#">What's Right for Me? ></a>
+      <br />
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <a href="#">Talk to Sales: +1 (800) 315-5939</a>
+      <br />
+      <h2 class="side-barh2"> Product Updates</h2>
+      <p class="side-barP">Get the latest on new features, product improvements, and other announcements.</p>
+      <p class="side-barP" style="color: #007c89;">see Whats New --></p>
+      <br>
+      <br>
+     
+    `;
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
+  function openNavRes() {
+    document.getElementById("mySidenav").style.width = "520px";
+    document.querySelector("#resource-nav").innerHTML = `
+      <p class="side-barP" style="color: #727070">Learn</p>
+      <a href="#"> MailChimp 101 ></a>
+      <a href="#">Help Center ></a>
+      <a href="#">Markating Library></a>
+      <br />
+      <br />
+      <hr />
+      <p class="side-barP" style="color: #727070">PLATFORM FEATURES</p>
+      <a href="#">For Freelancers & Agencies ></a>
+      <a href="#">For Developers ></a>
+      <a href="#">Hire A Trusted Partner></a>
+      <a href="#">Insight & Analitics</a>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <a href="#">Talk to Sales: +1 (800) 315-5939</a>
+      <h2 class="side-barh2"> App Integrations</h2>
+      <p class="side-barP">Connect your digital tools so you can do more with your marketing.</p>
+      <p class="side-barP" style="color: #007c89;">See all integrations--></p>
+      </div>
+      <br />
+      <br />
+    
+    `;
+  }
+
+  function openNavIns() {
+    document.getElementById("mySidenav").style.width = "520px";
+    document.querySelector("#resource-nav").innerHTML = `
+        <p class="side-barP" style="color: #727070">WE'ALL HELP YOU</p>
+        <a href="#">Get Your Buisness Online ></a>
+        <a href="#">Market Your Buisness ></a>
+        <br />
+        <br />
+        <hr />
+        <p class="side-barP" style="color: #727070">PLATFORM FEATURES</p>
+        <a href="#">Aduence Managemnt ></a>
+        <a href="#">Creative Tool ></a>
+        <a href="#">Markating Automation></a>
+        <a href="#">Insight & Analitics</a>
+        <br />
+        <br />
+        <hr />
+        <p style="color: #727070"></p>
+        <a href="#">Get Your Buisness Online ></a>
+        <a href="#">Market Your Buisness ></a>
+        <br />
+        <br />
+        <hr />
+        <p style="color: #727070">WE'ALL HELP YOU</p>
+        <a href="#">Get Your Buisness Online ></a>
+        <a href="#">Market Your Buisness ></a>
+        <br />
+        <br />
+        <hr />
+        <p style="color: #727070">WE'ALL HELP YOU</p>
+        <a href="#">Get Your Buisness Online ></a>
+        <a href="#">Market Your Buisness ></a>
+        <br />
+        <br />
+        <hr />
+
+        <h2 class="side-barh2">App Integrations</h2>
+        <p class="side-barP">
+          Connect your digital tools so you can do more with your marketing.
+        </p>
+        <p class="side-barP" style="color: #007c89">See all integrations--></p>
+    
+    `;
+
+  }
+
+ // inner nav sliding window-->
+
+  function openinnernav(){
+    document.getElementById("myinnerreside-nav").style.width = "410px";
+  }
+
+  function closeInnerNav(){
+    document.getElementById("myinnerreside-nav").style.width = "0px";
+
+  }
+
+ // inner nav sliding window-->
+
+</script>
