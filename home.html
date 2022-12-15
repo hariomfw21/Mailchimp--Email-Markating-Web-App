@@ -1,253 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <style>
-      /* body {
+        /* body {
         font-family: "Lato", sans-serif;
       } */
 
-      .sidenav {
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: white;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 20px;
+        }
 
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left:0;
-        background-color: white;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 20px;
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: black;
+            display: block;
+            transition: 0.3s;
+        }
 
-      }
+        /* side bar p tag */
 
-      .sidenav a {
+        .side-barP {
+            padding-left: 1.9rem;
+        }
 
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: black;
-        display: block;
-        transition: 0.3s;
+        .side-barh2 {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: black;
+            display: block;
+            transition: 0.3s;
+        }
 
-      }
+        .side-barh2:hover {
+            color: #007c89;
+        }
 
-      /* side bar p tag */
+        .sidenav a:hover {
+            color: #007c89;
+        }
 
-      .side-barP {
-        padding-left: 1.9rem;
-      }
+        /* inner side nav */
+        /* inner side nav */
 
-      .side-barh2 {
+        .innerside-nav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 520px;
+            background-color: #f6f6f4;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 20px;
+        }
 
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: black;
-        display: block;
-        transition: 0.3s;
+        .ullist-innernev {
+            list-style-type: none;
+            padding-top: 5.2rem;
+            padding-right: 20px;
+        }
 
-      }
+        .innernevAnc {
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+        }
 
-      .side-barh2:hover {
-        color: #007c89;
-      }
+        .innernevAnc:hover {
+            color: #007c89;
+        }
 
-      .sidenav a:hover {
-        color: #007c89;
-      }
+        .innernavp {
+            color: #727070;
+        }
 
-      /* inner side nav */
-      /* inner side nav */
+        .icon-nav {
+            padding: auto;
+            padding-left: 2rem;
+        }
 
-      .innerside-nav{
+        .icon-nav>i:nth-child(2) {
+            padding-left: 1.5rem;
+        }
 
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left:520px;
-        background-color: #f6f6f4;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 20px;
-      }
-
-
-      .ullist-innernev{
-        list-style-type: none;
-        padding-top: 5.2rem;
-        padding-right: 20px;
-      }
-
-      .innernevAnc{
-        text-decoration: none;
-        color: black;
-        font-size: 25px;
-      }
-
-      .innernevAnc:hover{
-        color: #007c89;
-      }
-
-      .innernavp{
-        color:#727070 ;
-      }
-
-
-
-      /* inner side nav */
-      /* inner side nav */
-
-
-      
+        /* inner side nav */
+        /* inner side nav */
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="Header">
-      <div class="nev-bar">
-        <button onmouseover="openNav()" class="nev-barAncer">Product</button>
-        <button onmouseover="openNavRes()" class="nev-barAncer">
-          Resource
-        </button>
-        <button onmouseover="openNavIns()" class="nev-barAncer">Inspration</button>
-        <button onmouseover="openNavPri()" class="nev-barAncer">Pricing</button>
-      </div>
-      <div class="nev-bar">
-        <img 
-        src="/pics and logo/Green_Bird_Creative_Business_Logo_Design-removebg-preview (1).png" alt="logo" />
-        <h2>WMB</h2>
-      </div>
-      <div class="nev-bar">
-        <div>
-         <p>Sales:</p>
-         <p >+1 (800) 315-5939</p>   
+        <div class="nev-bar">
+            <button onmouseover="openNav()" class="nev-barAncer">Product</button>
+            <button onmouseover="openNavRes()" class="nev-barAncer">
+                Resource
+            </button>
+            <button onmouseover="openNavIns()" class="nev-barAncer">
+                Inspration
+            </button>
+            <button onmouseover="openNavPri()" class="nev-barAncer">Pricing</button>
         </div>
-        <div>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            
+        <div class="nev-bar">
+            <img src="/pics and logo/Green_Bird_Creative_Business_Logo_Design-removebg-preview (1).png" alt="logo" />
+            <h2>WMB</h2>
         </div>
-        <div>
-            <button>Login</button>
-            <button>Sign up</button>
+
+        <div class="nev-bar">
+            <div>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sales:+1 (800) 315-5939</p>
+            </div>
+            <div class="icon-nav">
+                <i class="material-icons">search</i>
+                <i class="material-icons">delete</i>
+            </div>
+
+            <!-- Nev-bar login sign up button -->
+
+            <div>
+                <button>Log In</button>
+                <button>Sign up</button>
+            </div>
         </div>
-        
-      </div>
     </div>
-    <div>
-    </div>
+    <div></div>
 
     <!--  side nav -->
 
-    <div id="mySidenav" class="sidenav" onmouseleave="closeNav()">
-      <div class="nev-bar">
-        <button onmouseover="openNav()" class="nev-barAncer">Product</button>
-        <button onmouseover="openNavRes()" class="nev-barAncer">
-          Resource
-        </button>
-        <button onmouseover="openNavIns()" class="nev-barAncer">
-          Inspration
-        </button>
-        <button onmouseover="openNavPri()" class="nev-barAncer">Pricing</button>
-      </div>
-      <br />
-      <div id="resource-nav">
-
-        <!-- code in script -->
-        <!-- code in script -->
-        <!-- code in script -->
-        <!-- code in script -->
-      
-      </div>
+    <div id="mySidenav" class="sidenav" >
+        <div class="nev-bar">
+            <button onmouseover="openNav()" class="nev-barAncer">Product</button>
+            <button onmouseover="openNavRes()" class="nev-barAncer">
+                Resource
+            </button>
+            <button onmouseover="openNavIns()" class="nev-barAncer">
+                Inspration
+            </button>
+            <button onmouseover="openNavPri()" class="nev-barAncer">Pricing</button>
+        </div>
+        <br />
+        <div id="resource-nav">
+            <!-- code in script -->
+            <!-- code in script -->
+            <!-- code in script -->
+            <!-- code in script -->
+        </div>
     </div>
- 
     <!-- side nav ^^^^ -->
-   
-
-    <div id="myinnerreside-nav" class="innerside-nav"  onmouseleave="closeInnerNav()">
-
+    <div id="myinnerreside-nav" class="innerside-nav" onmouseleave="closeInnerNav(),closeNav()">
         <div id="innerresorce-nav">
-
             <ul class="ullist-innernev">
-              <li>
-                <a class="innernevAnc" href="#">Website</a>
-                <p class="innernavp">Create a free website that comes with built-in markating tool</p>
-              </li>
-
-              <br>
-
                 <li>
-                 <a class="innernevAnc" href="#">Online Store</a>
-                 <p class="innernavp">Get beautiful onbrand design made for you with the power Of AI</p>
+                    <a class="innernevAnc" href="#">Website</a>
+                    <p class="innernavp">
+                        Create a free website that comes with built-in markating tool
+                    </p>
                 </li>
 
-                <br>
+                <br />
 
-              <li>
-                 <a class="innernevAnc" href="#">Dynamic Content</a>
-                 <p class="innernavp">Pretionlise Individual content Block with You Emails.</p>
-              </li>
+                <li>
+                    <a class="innernevAnc" href="#">Online Store</a>
+                    <p class="innernavp">
+                        Get beautiful onbrand design made for you with the power Of AI
+                    </p>
+                </li>
 
-              <br>
+                <br />
 
-              <li>
-                 <a class="innernevAnc" href="#">Subject Line Helper</a>
-                 <p class="innernavp">Get real-time feedback on how to refine your subject lines.</p>
-              </li>
+                <li>
+                    <a class="innernevAnc" href="#">Dynamic Content</a>
+                    <p class="innernavp">
+                        Pretionlise Individual content Block with You Emails.
+                    </p>
+                </li>
 
-              <br>
+                <br />
 
-              <li>
-                 <a class="innernevAnc" href="#">Campaign Templates</a>
-                 <p class="innernavp">100+ pre-designed email and landing page templates that fit any message.</p> 
-              </li>
+                <li>
+                    <a class="innernevAnc" href="#">Subject Line Helper</a>
+                    <p class="innernavp">
+                        Get real-time feedback on how to refine your subject lines.
+                    </p>
+                </li>
 
-              <br>
+                <br />
 
-              <hr>
+                <li>
+                    <a class="innernevAnc" href="#">Campaign Templates</a>
+                    <p class="innernavp">
+                        100+ pre-designed email and landing page templates that fit any
+                        message.
+                    </p>
+                </li>
 
-              
+                <br />
 
+                <hr />
             </ul>
-
-
-           
-           
-
-           
-           
-
-           
-
-           
-
-
-
         </div>
-
     </div>
-    
-  </body>
+</body>
+
 </html>
 
 <script>
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "520px";
-    document.querySelector("#resource-nav").innerHTML = `
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "520px";
+        document.querySelector("#resource-nav").innerHTML = `
     <p class="side-barP" style="color: #727070">WE'ALL HELP YOU</p>
       <a href="#" onmouseover="openinnernav()">Get Your Buisness Online ></a>
-      <a href="#">Market Your Buisness ></a>
+      <a href="#" onmouseover="openinnernav2()">Market Your Buisness ></a>
       <br />
       <br />
       <hr />
       <p class="side-barP" style="color: #727070">PLATFORM FEATURES</p>
-      <a href="#">Aduence Managemnt ></a>
+      <a href="#" onmouseover="openinnernav3()">Audience Management></a>
       <a href="#">Creative Tool ></a>
       <a href="#">Markating Automation></a>
       <a href="#">Insight & Analitics</a>
@@ -272,15 +260,15 @@
       <br>
      
     `;
-  }
+    }
 
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
 
-  function openNavRes() {
-    document.getElementById("mySidenav").style.width = "520px";
-    document.querySelector("#resource-nav").innerHTML = `
+    function openNavRes() {
+        document.getElementById("mySidenav").style.width = "520px";
+        document.querySelector("#resource-nav").innerHTML = `
       <p class="side-barP" style="color: #727070">Learn</p>
       <a href="#"> MailChimp 101 ></a>
       <a href="#">Help Center ></a>
@@ -307,11 +295,11 @@
       <br />
     
     `;
-  }
+    }
 
-  function openNavIns() {
-    document.getElementById("mySidenav").style.width = "520px";
-    document.querySelector("#resource-nav").innerHTML = `
+    function openNavIns() {
+        document.getElementById("mySidenav").style.width = "520px";
+        document.querySelector("#resource-nav").innerHTML = `
         <p class="side-barP" style="color: #727070">WE'ALL HELP YOU</p>
         <a href="#">Get Your Buisness Online ></a>
         <a href="#">Market Your Buisness ></a>
@@ -352,20 +340,141 @@
         <p class="side-barP" style="color: #007c89">See all integrations--></p>
     
     `;
+    }
 
-  }
+    // inner nav sliding window--> 1
 
- // inner nav sliding window-->
+    function openinnernav() {
+        document.getElementById("myinnerreside-nav").style.width = "410px";
+        document.getElementById("innerresorce-nav").innerHTML = `
+     
+    <ul class="ullist-innernev">
+          <li>
+            <a class="innernevAnc" href="#">Website</a>
+            <p class="innernavp">
+              Create a free website that comes with built-in markating tool
+            </p>
+          </li>
 
-  function openinnernav(){
+          <br />
+
+          <li>
+            <a class="innernevAnc" href="#">Online Store</a>
+            <p class="innernavp">
+              Get beautiful onbrand design made for you with the power Of AI
+            </p>
+          </li>
+
+          <br />
+
+          <li>
+            <a class="innernevAnc" href="#">Dynamic Content</a>
+            <p class="innernavp">
+              Pretionlise Individual content Block with You Emails.
+            </p>
+          </li>
+
+          <br />
+
+          <li>
+            <a class="innernevAnc" href="#">Subject Line Helper</a>
+            <p class="innernavp">
+              Get real-time feedback on how to refine your subject lines.
+            </p>
+          </li>
+
+          <br />
+
+          <li>
+            <a class="innernevAnc" href="#">Campaign Templates</a>
+            <p class="innernavp">
+              100+ pre-designed email and landing page templates that fit any
+              message.
+            </p>
+          </li>
+
+          <br />
+
+          <hr />
+        </ul>
+    `
+
+    }
+
+    function closeInnerNav() {
+        document.getElementById("myinnerreside-nav").style.width = "0px";
+    }
+
+    // innner nav sliding window--> 2
+
+    function openinnernav2() {
+        document.getElementById("myinnerreside-nav").style.width = "410px";
+        document.getElementById("innerresorce-nav").innerHTML = `
+      
+    <ul class="ullist-innernev">
+          <li>
+            <a class="innernevAnc" href="#">Emails</a>
+            <p class="innernavp">
+              Ingage Your Audiance with beautiful brange Email
+            </p>
+          </li>
+
+          <br />
+
+          <li>
+            <a class="innernevAnc" href="#">Loading Pages</a>
+            <p class="innernavp">
+                Design landing pages that grow your audience and help you sell more stuff. 
+            </p>
+          </li>
+
+          <br />
+
+          <li>
+            <a class="innernevAnc" href="#">Degital Ads</a>
+            <p class="innernavp">
+              Reach People on Facebook, Instagram and all over the world
+            </p>
+          </li>
+
+          <br />
+
+          <li>
+            <a class="innernevAnc" href="#">Social Media</a>
+            <p class="innernavp">
+             Build your following with targeted ads and organic posting on Facebook, Instagram, and Twitter.
+            </p>
+          </li>
+
+          <br />
+
+          <li>
+            <a class="innernevAnc" href="#">Campaign Templates</a>
+            <p class="innernavp">
+              100+ pre-designed email and landing page templates that fit any
+              message.
+            </p>
+          </li>
+
+          <br />
+
+          <hr />
+        </ul>
+
+    
+    `
+    }
+
+
+   function openinnernav3(){
     document.getElementById("myinnerreside-nav").style.width = "410px";
-  }
+    document.getElementById("innerresorce-nav").innerHTML = `
+    
+    
 
-  function closeInnerNav(){
-    document.getElementById("myinnerreside-nav").style.width = "0px";
+    `
+    
+   }
 
-  }
-
- // inner nav sliding window-->
 
 </script>
