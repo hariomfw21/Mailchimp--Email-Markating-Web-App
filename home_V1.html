@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Global */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .float_btn{
+            display: inline-block;
+            font-size:14px;
+            color: black;
+            padding: 14px 24px;
+            border-radius: 35px;
+            border: none;
+            border:1px solid black;
+            margin-top: 20px;
+            transform: translateY(0);
+            position: relative;
+            text-decoration: none;
+        }
+        .float_btn:hover{
+            box-shadow: 0px 5px 0px -1px rgba(0,0,0,1);
+            transform: translate(0px, -5px);            
+            /* transition: all ease-in-out 200ms; */
+            transition: transform .3s cubic-bezier(.5,2.5,.7,.7),box-shadow .3s cubic-bezier(.5,2.5,.7,.7),-webkit-transform .3s cubic-bezier(.5,2.5,.7,.7),-webkit-box-shadow .3s cubic-bezier(.5,2.5,.7,.7);
+        }
+
+        /* Fonts */
+        .meansWeb{
+            font-family: Means Web,Georgia,Times,Times New Roman,serif;
+        }
+        .graphikWeb{
+            font-family: Graphik Web,Helvetica Neue,Helvetica,Arial,Verdana,sans-serif;;
+        }
+        .center{
+            text-align: center;
+        }
+
+        /* Turn Emails into Revenue */
+        #TurnEmailsIntoRevenue{
+            /* height: 400px; */
+            padding-top: 70px;
+            padding-bottom: 70px;
+            /* background-color: teal; */
+        }
+        #TurnEmailsIntoRevenue h1{
+            font-size: 45px;
+            font-weight: 400;
+        }
+        #TurnEmailsIntoRevenue p{
+            width: 60%;
+            margin:auto;
+            margin-top: 15px;            
+            margin-bottom: 20px;
+            font-size:23px;
+            line-height: 1.3333;
+            letter-spacing: -.02rem;
+        }
+        #TurnEmailsIntoRevenue a{
+            background-color: #FFE01B;
+        }
+        
+        /* Convert with Automations */
+        #ConvertWithAutomations{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .cwa_inner_img{
+            height:480px;
+            overflow: hidden;
+        }
+        .cwa_inner_img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .cwa_main:hover img,
+        .cwa_main:focus img{
+            transform: scale(1.05);  
+            transition: transform .3s ease-in-out;
+            cursor: pointer;
+        }
+        .cwa_main:hover h3,
+        .cwa_main:focus h3{
+            transition: all ease-out 200ms;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .cwa_inner_img h3{
+            position: absolute;
+            padding: 40px 0px 0px 30px;
+            font-size: 22px;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            z-index: 10;
+        }
+        .cwa_inner_box{
+            padding: 40px;
+        }
+        .cwa_main:first-child .cwa_inner_box{
+            background-color: #D99536;
+        }
+        .cwa_main:nth-child(2) .cwa_inner_box{
+            background-color: #E7B75F;
+        }
+        .cwa_main:nth-child(3) .cwa_inner_box{
+            background-color: #FDF8EA;
+        }        
+        .cwa_inner_box:hover{
+            cursor: pointer;
+        }
+        .cwa_inner_box p{
+            /* padding: 40px; */
+            line-height: 1.75;
+            font-size: 17px;
+        }
+
+        /* Video Section */
+        #VideoSection{
+            padding: 80px;
+            background-color: rgb(36,28,21);
+        }
+        #VideoSection p{
+            padding-top: 50px;
+            width: 64%;
+            margin: auto;
+            font-size: 24px;
+            color: white;
+            line-height: 1.333;
+            letter-spacing: -.02rem;
+            text-align: center;
+        }
+        .videoContainer{
+            width: 85%;
+            margin: auto;
+        }
+        .videoContainer iframe{
+            width: 100%;
+            height: 550px;
+        }
+
+        /* Gif Section */
+        .GifSection_Heading{
+            padding: 80px;
+            width: 45%;
+            margin: auto;
+        }
+        .GifSection_Heading h1{
+            text-align: center;
+            font-weight: 400;
+            font-size: 35px;
+        }
+        .GifSection_inner{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+        }
+        .Gif_left{
+            width: 100%;
+            text-align: center;
+            background-color: #EFEFE6;
+        }
+        .Gif_left img{
+            width: 60%;
+        }
+        .Gif_right{
+            padding-left: 100px;
+        }
+        .Gif_right h3{
+            font-size: 30px;
+            line-height: 1.25;
+            font-weight: 400;
+        }
+        .Gif_right p{
+            font-size: 20px;
+            line-height: 1.25;
+        }
+        .Gif_right a{
+            font-size: 18px;
+            line-height: 1.25;
+        }
+        h2{
+        }
+        /* Media Query */
+
+        /* Tablet View */
+        @media (min-width: 768px) and (max-width: 1024px){
+            /* Turn Emails into Revenue */
+
+            #TurnEmailsIntoRevenue h1{
+                font-size: 35px;
+            }
+            #TurnEmailsIntoRevenue p{
+                width: 80%;       
+                font-size:20px;
+            }
+
+            /* Convert with Automations */
+            #ConvertWithAutomations{
+                grid-template-columns: repeat(2,1fr);
+            }
+            
+            .cwa_inner_img{
+                height:580px;
+                overflow: hidden;
+            }
+            
+            /* Video Section */
+            #VideoSection{
+                padding: 60px 0px;
+            }
+            #VideoSection p{
+                width: 80%;
+            }
+            .videoContainer iframe{
+                height: 380px;
+            }
+        }
+    
+        /* Mobile View */
+        @media (min-width: 300px) and (max-width: 767px){
+        /* Turn Emails into Revenue */
+        
+        #TurnEmailsIntoRevenue{
+            width: 90%;
+            margin: auto;
+        }
+        #TurnEmailsIntoRevenue h1{
+            font-size: 28px;
+        }
+        #TurnEmailsIntoRevenue p{
+            width: 90%;            
+            font-size:18px;
+        }
+
+        /* Convert with Automations */
+
+        #ConvertWithAutomations{
+            grid-template-columns: repeat(1,1fr);
+        }
+
+        /* Video Section */
+        #VideoSection{
+            padding: 50px 0px;
+        }
+        #VideoSection p{
+            width: 80%;
+            font-size: 18px;
+            padding-top: 30px;
+        }
+        .videoContainer iframe{
+            height: 180px;
+        }
+    }
+        
+    </style>
+</head>
+<body>
+
+    <!-- Turn Emails into Revenue -->
+
+    <div id="TurnEmailsIntoRevenue" class="center">
+        <h1 class="meansWeb">Turn Emails into Revenue</h1>
+        <p class="graphikWeb">Win new customers with the #1 email marketing and automations brand* that recommends ways to get more opens, clicks, and sales.</p>
+        <a href="" class="float_btn graphikWeb">Sign Up</a>
+    </div>
+
+    <!-- Convert with Automations -->
+
+    <!-- <div id="ConvertWithAutomations">
+        <div class="cwa_main">
+            <div class="cwa_inner_img">
+                <h3 class="meansWeb">Convert With Automations</h3>
+                <img src="https://eep.io/images/yzco4xsimv0y/33f3mgIWbzKjIpIRJi2f5v/6bd36bba38b7f6a94d587605ab9a7d75/Desktop_Feature_Cards_1_Automations.jpeg?w=630&fm=webp&q=80" alt="">
+            </div>
+            <div class="cwa_inner_box">
+                <p class="graphikWeb">Send the right message at the right time to convert more customers.</p>
+                <a href="" class="float_btn graphikWeb">Learn more</a>
+            </div>
+        </div>
+        
+        <div class="cwa_main">
+            <div class="cwa_inner_img">
+                <h3 class="meansWeb">Optimize AI & Analytics</h3>
+                <img src="https://eep.io/images/yzco4xsimv0y/hBcOt3RZ5DOhMJD2Hi2Z2/96b28d17c45e9376731ad825b002b0ff/Desktop_Feature_Cards_2_Analytics.png?w=630&fm=webp&q=80" alt="">
+            </div>
+            <div class="cwa_inner_box">
+                <p class="graphikWeb">Send the right message at the right time to convert more customers.</p>
+                <a href="" class="float_btn graphikWeb">Learn more</a>
+            </div>
+        </div>
+        
+        <div class="cwa_main">
+            <div class="cwa_inner_img">
+                <h3 class="meansWeb">Target with Segmentation</h3>
+                <img src="https://eep.io/images/yzco4xsimv0y/5xqzo6y8Z7anw9VQXJarpj/5f91182af7bf16ecc34b487a619d0a54/Desktop_Feature_Cards_3_Segmentation.jpeg?w=630&fm=webp&q=80" alt="">
+            </div>
+            <div class="cwa_inner_box">
+                <p class="graphikWeb">Send the right message at the right time to convert more customers.</p>
+                <a href="" class="float_btn graphikWeb">Learn more</a>
+            </div>
+        </div>
+        
+        <div class="cwa_main">
+            <div class="cwa_inner_img">
+                <h3 class="meansWeb">Sync with Integrations</h3>
+                <img src="https://eep.io/images/yzco4xsimv0y/lsHRpmOI81ZcFS1Yld0Bs/1e2812587cd0f3089061bd4b513fd6d0/Desktop_Feature_Cards_4_Integrations.png?w=630&fm=webp&q=80" alt="">
+            </div>
+            <div class="cwa_inner_box">
+                <p class="graphikWeb">Send the right message at the right time to convert more customers.</p>
+                <a href="" class="float_btn graphikWeb">Learn more</a>
+            </div>
+        </div>
+    </div>     -->
+    
+    <!-- Video Section -->
+
+    <!-- <div id="VideoSection">
+        <div class="videoContainer">
+            <iframe src="https://www.youtube.com/embed/2HFPdzThVDk?rel=0&showinfo=0&modestbranding=1"  frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+        <p class=graphikWeb>
+            Most email marketing platforms tell you how your campaigns perform. We analyze the data from the billions of emails we send to give you personalized recommendations for improving your content, targeting, and automations.
+        </p>
+    </div> -->
+
+    <!-- Gif Section -->
+
+    <!-- <div id="GifSection">
+        <div class="GifSection_Heading">
+            <h1 class="meansWeb">Generate up to 4x more orders* with Customer Journey Builder automations</h1>
+        </div>
+        <div class="GifSection_inner">
+            <div class="Gif_left">
+                <img src="/GIFs/1_1.gif" alt="">
+            </div>
+            <div class="Gif_right">
+                <h3 class="graphikWeb">
+                    Convert more customers at scale
+                </h3>
+                <p class="graphikWeb">
+                    Drive more traffic and sales by setting up automations that trigger emails based on customer behavior with our Customer Journey Builder.
+                </p>
+                <a href="" class="graphikWeb">Learn More ></a>
+            </div>
+        </div>
+    </div> -->
+
+    <div id="bigbox">
+        <h1>Find the right plan</h1>
+        <div id="plan">
+            <div id="box1">
+                <h3>Premium</h3>
+                <h6>Our most advanced tools, unlimited contacts, and priority support; built for teams.</h8>
+                <h1>₹23,000</h1>
+                <p>1. Phone & Priority Support</p>
+                <p>2. Custom-Coded and Pre-built Email Templates</p>
+                <p>3. Multivariate and A/B Testing</p>
+                <p>4. Enhanced Automated Customer Journeys</p>
+                <p>5. Predictive Segmentation</p>
+                <p>6. Assisted Onboarding</p> 
+            </div>
+
+            <div id="box1">
+                <h3>Standard</h3>
+                <h6>Sell even more with personalization, optimization tools, and enhanced automations.</h8>
+                <h1>₹1,150</h1>
+                <p>1. 24/7 Email & Chat Support</p>
+                <p>2. Custom-Coded and Pre-built Email Templates</p>
+                <p>3. A/B Testing</p>
+                <p>4. Enhanced Automated Customer Journeys</p>
+                <p>5. Predictive Segmentation</p>
+            </div>
+
+            <div id="box1">
+                <h3>Essentials</h3>
+                <h6>Send the right content at the right time with testing and scheduling features.</h8>
+                <h1>₹770</h1>
+                <p>1. 24/7 Email & Chat Support</p>
+                <p>2. Pre-built Email Templates</p>
+                <p>3. A/B Testing</p>
+                <p>4. Basic Automated Customer Journeys</p>
+                 
+            </div>
+            <div id="box1">
+                <h3>Free</h3>
+                <h6>Easily create email campaigns and learn more about your customers.</h8>
+                <h1>₹0</h1>
+                <p>1. Email support for first 30 days</p>
+                <p>2. Pre-built Email Templates</p>
+            </div>
+        </div>
+        <button id="more">See More</button>
+    </div>
+    
+
+
+    <div style="height:500px;background-color:hotpink"></div>
+</body>
+</html>
