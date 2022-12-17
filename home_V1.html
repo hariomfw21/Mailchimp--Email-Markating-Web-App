@@ -168,26 +168,284 @@
             background-color: #EFEFE6;
         }
         .Gif_left img{
-            width: 60%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         .Gif_right{
-            padding-left: 100px;
+            padding-left: 100px;            
+            padding-right: 40px;
         }
         .Gif_right h3{
             font-size: 30px;
             line-height: 1.25;
             font-weight: 400;
+            letter-spacing: 0.03em;
+            padding-bottom: 16px;
         }
         .Gif_right p{
             font-size: 20px;
+            letter-spacing: 0.03em;
+            line-height: 1.333;
+        }
+        .Gif_right img{
+            display: flex;
+            align-items: center;
+        }
+        .Gif_right a,.Keep_left a,.integrations_button a{
+            display: flex;
+            align-items: center;
+            padding: 0px 22px;
+            border-radius: 30px;
+            letter-spacing: 0.03em;
+            font-size: 17px;
+            color: black;
+            margin-top: 40px;
+            margin-left: -20px;
+            text-decoration: none;
+            -webkit-transition: ease-out 0.3s;
+            -moz-transition: ease-out 0.3s;
+            transition: ease-out 0.3s;
+        }
+        .Gif_right a:hover,.Keep_left a:hover{
+            box-shadow: inset 122px 0 0 0 #FFE01B; 
+        } 
+
+        /* KeepCustomersReady Section */
+        #KeepCustomersReady{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+            background-color: #E7B75F;
+        }
+        .Keep_left{
+            padding: 0px 80px 0px 60px;
+        }
+        .Keep_left h2,.integrations_Heading h1{
+            font-size: 30px;
             line-height: 1.25;
+            font-weight: 400;
+            letter-spacing: 0.03em;
+            padding-bottom: 50px;
         }
-        .Gif_right a{
-            font-size: 18px;
-            line-height: 1.25;
+        .Keep_left h4{
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.03em;
+            line-height: 1.333;
+            padding-bottom: 30px;
         }
-        h2{
+        .Keep_left p{
+            font-size: 20px;
+            letter-spacing: 0.03em;
+            line-height: 1.333;
         }
+        .Keep_right{
+            text-align: center;
+        }
+        .Keep_right img{
+            width: 100%;
+            object-fit: cover;
+        }
+
+        /* integrations Section */
+        #integrations{
+            padding: 80px 60px ;
+        }
+        .integrations_Heading h1{
+            font-size: 34px;
+            width: 45%;
+            letter-spacing: 0.01em;
+        }
+        .integrations_inner{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            align-items: center;
+        }
+        .integrations_card{
+            display: flex;
+            padding: 24px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .integrations_card_left{
+            width: 26%;
+        }
+        .integrations_card_left img{
+            width: 100%;
+        }
+        .integrations_card_right{
+            width: 69%;
+            padding: 10px 0;
+        }
+        .integrations_card_right h4{
+            font-size: 16px;
+            letter-spacing: 0.02;
+            font-weight: 600;
+            padding-bottom: 7px;
+        }
+        .integrations_card_right p{
+            color:#493f37a6;
+            font-size: 13px;
+            line-height: 1.3em;
+            letter-spacing: 0.03em;
+        }
+        .integrations_card:hover{
+            background-color:#241c150d;
+        }
+        .integrations_button a:hover{
+            box-shadow: inset 234px 0 0 0 #FFE01B; 
+        }
+
+        /* disclaimers */
+        #disclaimers{
+            padding: 50px;
+            background-color: #f6f6f4;
+        }
+        #disclaimers ol{
+            color: #52473f;
+            font-size: 11px;
+            line-height: 1.333em;
+            letter-spacing: 0.02em;
+        }
+        #disclaimers span{
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        /* PlanBox Section */
+
+        #planbox ul  li> span:before { content:"\2713\0020"; }
+        #planbox ul  li> span.na:before {
+             /* content: none !important;  */
+             content: "\274c\0020"!important; 
+        }
+        #planbox > h2 {
+            text-align: center;
+            padding-bottom: 40px;
+            padding-top: 10px;
+            font-weight: 300;
+            font-size: 45px;
+        }
+        #planbox .typeOfMemberShip h3 {
+            font-weight: 400;
+            font-size: 20px;
+        }
+        #planbox {
+            padding: 80px 70px;
+            background-color: #f6f6f4;
+            padding-bottom: 5rem;
+            letter-spacing: 0.02em;
+        }
+        #plancards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* margin-bottom: 500px; */
+            background-color: white;
+        }
+
+        .card {
+            padding: 15px 18px 15px 18px;
+            font-size: 1em;
+            color: rgba(36, 28, 21, 0.65);
+            color: #403b3b;
+            border: 1px #cfd8dc solid;
+        }
+        .typeOfMemberShip {
+            padding: 10px 0px;
+        }
+        .membershipPara {
+            font-size: 13px;
+            margin-bottom: 10px;
+            color: rgba(36, 28, 21, 0.65);
+        }
+        .membershipPara ~ p {
+            color: rgba(36, 28, 21, 0.65);
+            font-size: 13px;
+        }
+
+        .price {
+            font-size: 30px;
+            font-weight: 400;
+        }
+        #planbox ul {
+            list-style: none;
+            margin: 15px;
+        }
+        #planbox ul > li span {
+            border-bottom: 1px #403b3b dashed;
+            text-align: justify;
+            font-size: 13px;
+        }
+        #planbox .card ul > li {
+            border-bottom: 1px #cfd8dc solid;
+            margin-bottom: 20px;
+            height: 25px;
+            padding-bottom: 25px;
+            /* border: 1px solid;   */
+        }
+        #planbox .card sup {
+            font-size: 10px;
+        }
+        #planbox .na {
+            color: rgba(36, 28, 21, 0.3);
+        }
+        #noborder {
+            border-bottom: 0px;
+        }
+        #noborder1 {
+            border-bottom: 0px;
+        }
+        #noborder3 {
+            border-bottom: 0px;
+        }
+        #noborder4 {
+            border-bottom: 0px;
+        }
+        #bottompara {
+            /* border: 1px solid; */
+            box-sizing: border-box;
+            font-size: 13px;
+            text-align: center;
+            margin-top: 20px;
+            color: #94a0a5;
+        }
+        #bottompara span {
+            color: #565c5f;
+        }
+        #btmbtn {
+            display: block;
+            margin: auto;
+            margin-top: 25px;
+            padding: 15px 20px;
+            border-radius: 500px;
+            background-color: #ffe01b;
+        }
+        #learnmore {
+            border-bottom: 1px dotted;
+            color: #94a0a5;
+        }
+        #navbtn a {
+            text-decoration: none;
+            color: #403b3b;
+        }
+        #plansBottomHeader {
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 3 00;
+            padding: 0px 500px;
+        }
+        #plancards .card:hover{
+            box-shadow: 0 0 0.625rem -0.125rem hsl(0deg 0% 55% / 75%);
+            cursor: pointer;
+        }
+        
+        .bottompara_btn{
+            margin-top: 40px;
+            background-color: #ffe01b;
+        }
+
+
         /* Media Query */
 
         /* Tablet View */
@@ -222,48 +480,206 @@
             .videoContainer iframe{
                 height: 380px;
             }
+
+            /* Gif Section */
+            .GifSection_Heading{
+                padding: 80px 0px;
+                width: 75%;
+            }
+            .GifSection_inner{
+                grid-template-columns: repeat(1,1fr);
+                width: 85%;
+                margin: auto;
+            }
+            .Gif_left img{
+                width: 80%;
+            }
+            .Gif_right{
+                padding: 30px 0px 60px 0px;            
+            }
+            .Gif_right a,.Keep_left a{
+                margin-top: 30px;
+            }
+            
+            /* KeepCustomersReady Section */
+            #KeepCustomersReady{
+                grid-template-columns: repeat(1,1fr);
+                margin: 0px;
+                padding: 40px 55px;
+                background-color: #E7B75F;
+            }
+            .Keep_left{
+                padding: 30px 0px 30px 0px;  
+            }
+
+            /* integrations Section */
+            .integrations_inner{
+                grid-template-columns: repeat(2,1fr);
+            }
+            .integrations_card:last-child{
+                display: none;
+            }
+            .integrations_Heading h1 {
+                width: 95%;
+                padding-bottom: 30px;
+            }
+
+            /* PlanBox Section */
+            #plancards {
+                padding: 0px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }     
+            #planbox > h2 {
+                font-size: 35px;
+            } 
         }
     
         /* Mobile View */
         @media (min-width: 300px) and (max-width: 767px){
         /* Turn Emails into Revenue */
         
-        #TurnEmailsIntoRevenue{
-            width: 90%;
-            margin: auto;
-        }
-        #TurnEmailsIntoRevenue h1{
-            font-size: 28px;
-        }
-        #TurnEmailsIntoRevenue p{
-            width: 90%;            
-            font-size:18px;
-        }
+            #TurnEmailsIntoRevenue{
+                width: 90%;
+                margin: auto;
+            }
+            #TurnEmailsIntoRevenue h1{
+                font-size: 28px;
+            }
+            #TurnEmailsIntoRevenue p{
+                width: 90%;            
+                font-size:18px;
+            }
 
-        /* Convert with Automations */
+            /* Convert with Automations */
 
-        #ConvertWithAutomations{
-            grid-template-columns: repeat(1,1fr);
-        }
+            #ConvertWithAutomations{
+                grid-template-columns: repeat(1,1fr);
+            }
 
-        /* Video Section */
-        #VideoSection{
-            padding: 50px 0px;
+            /* Video Section */
+            #VideoSection{
+                padding: 50px 0px;
+            }
+            #VideoSection p{
+                width: 80%;
+                font-size: 18px;
+                padding-top: 30px;
+            }
+            .videoContainer iframe{
+                height: 180px;
+            }
+
+            /* Gif Section */
+            .GifSection_Heading{
+                padding: 40px 0px;
+                width: 85%;
+            }
+            .GifSection_Heading h1{
+                font-size: 24px;
+            }
+            .GifSection_inner{
+                grid-template-columns: repeat(1,1fr);
+                width: 85%;
+                margin: auto;
+            }
+            .Gif_left img{
+                width: 100%;
+            }
+            .Gif_right{
+                padding: 30px 0px 60px 0px;            
+            }
+            .Gif_right h3{
+                font-size: 14px;
+            }
+            .Gif_right p,.Keep_left p{
+                font-size: 16px;
+            }        
+            .Gif_right a,.Keep_left a{
+                margin-top: 20px;
+                margin-left: 0px;
+            }
+
+            #KeepCustomersReady{
+                grid-template-columns: repeat(1,1fr);
+                margin: 0px;
+                padding: 40px 20px;
+                background-color: #E7B75F;
+            }
+            .Keep_left{
+                padding: 30px 0px 30px 0px;  
+            }
+            .Keep_left h2{
+                font-size: 24px;
+                padding-bottom: 40px;
+            }
+            .Keep_left h4{
+                font-size: 15px;
+                padding-bottom: 15px;
+            }
+
+            /* integrations Section */
+            
+            #integrations{
+                padding: 0px 24px 30px 24px;
+            }
+            .integrations_inner{
+                grid-template-columns: repeat(2,1fr);
+                gap: 10px;
+            }
+            .integrations_Heading h1{
+                font-size: 24px;
+                padding-bottom: 20px;
+                width: 95%;
+            }
+            .integrations_card:last-child{
+                display: none;
+            }        
+            .integrations_card{
+                flex-direction: column;
+                justify-content: center;
+                background-color:#241c150d;
+                /* height: 100% !important; */
+                height: 140px;
+                padding: 15px 6px;
+            }    
+            .integrations_card_right p{
+                display: none;
+            }
+            .integrations_card_right h4{
+                font-size: 15px;
+                font-weight: 400;
+                text-align: center;
+            }
+            .integrations_card_left {
+                width: 60%;
+            }
+
+            /* disclaimers */
+            #disclaimers{
+                padding: 30px;
+            }
+
+            /* PlanBox Section */
+            #planbox{
+                padding: 40px 15px;
+            }
+            #plancards {
+                padding: 0px;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 10px;
+            }       
+            #planbox > h2 {
+                font-size: 28px;
+            } 
         }
-        #VideoSection p{
-            width: 80%;
-            font-size: 18px;
-            padding-top: 30px;
-        }
-        .videoContainer iframe{
-            height: 180px;
-        }
-    }
         
     </style>
 </head>
 <body>
 
+    <div style="height:100px;background-color:hotpink"></div>
     <!-- Turn Emails into Revenue -->
 
     <div id="TurnEmailsIntoRevenue" class="center">
@@ -292,7 +708,7 @@
                 <img src="https://eep.io/images/yzco4xsimv0y/hBcOt3RZ5DOhMJD2Hi2Z2/96b28d17c45e9376731ad825b002b0ff/Desktop_Feature_Cards_2_Analytics.png?w=630&fm=webp&q=80" alt="">
             </div>
             <div class="cwa_inner_box">
-                <p class="graphikWeb">Send the right message at the right time to convert more customers.</p>
+                <p class="graphikWeb">Get AI-assisted suggestions to help make your content more engaging.</p>
                 <a href="" class="float_btn graphikWeb">Learn more</a>
             </div>
         </div>
@@ -303,7 +719,7 @@
                 <img src="https://eep.io/images/yzco4xsimv0y/5xqzo6y8Z7anw9VQXJarpj/5f91182af7bf16ecc34b487a619d0a54/Desktop_Feature_Cards_3_Segmentation.jpeg?w=630&fm=webp&q=80" alt="">
             </div>
             <div class="cwa_inner_box">
-                <p class="graphikWeb">Send the right message at the right time to convert more customers.</p>
+                <p class="graphikWeb">Boost customer loyalty by predicting the right customers to target.</p>
                 <a href="" class="float_btn graphikWeb">Learn more</a>
             </div>
         </div>
@@ -314,7 +730,7 @@
                 <img src="https://eep.io/images/yzco4xsimv0y/lsHRpmOI81ZcFS1Yld0Bs/1e2812587cd0f3089061bd4b513fd6d0/Desktop_Feature_Cards_4_Integrations.png?w=630&fm=webp&q=80" alt="">
             </div>
             <div class="cwa_inner_box">
-                <p class="graphikWeb">Send the right message at the right time to convert more customers.</p>
+                <p class="graphikWeb">Connect more tools, get more data, save time, and make better decisions.</p>
                 <a href="" class="float_btn graphikWeb">Learn more</a>
             </div>
         </div>
@@ -332,9 +748,164 @@
         </p>
     </div>
 
-    <!-- Gif Section -->
+      
+    <!--   Plan Section 1 -->
+    
+    <div id="planbox">
+        <h2 class="meansWeb">Find the right plan</h2>
+        <div id="plancards">
+          <div class="card">
+            <h3 class="typeOfMemberShip meansWeb">Premium</h3>
+            <p class="membershipPara graphikWeb">
+              Our most advanced tools, unlimited contacts, and priority support;
+              built for teams.
+            </p>
+            <p class="graphikWeb">Starts at</p>
+            <h3 class="price meansWeb"><sup>₹</sup>23,000</h3>
+            <p class="graphikWeb">/month based on 10,000 contacts*</p>
+  
+            <div class="ul graphikWeb">
+              <ul>
+                <li>
+                  <span>Phone & Priority Support</span>
+                </li>
+                <li>
+                  <span>Custom-Coded and Pre-built Email Templates</span>
+                </li>
+                <li>
+                  <span>Multivariate and A/B Testing</span>
+                </li>
+                <li>
+                  <span>Enhanced Automated Customer Journeys</span>
+                </li>
+                <li>
+                  <span> Predictive Segmentation </span>
+                </li>
+                <li id="noborder">
+                  <span>Assisted Onboarding</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="typeOfMemberShip meansWeb">Standard</h3>
+            <p class="membershipPara graphikWeb">
+              Sell even more with personalization, optimization tools, and
+              automations.
+            </p>
+            <p class="graphikWeb">Starts at</p>
+            <h3 class="price meansWeb"><sup>₹</sup>1,150</h3>
+            <p class="graphikWeb">/month based on 500 contacts*</p>
+  
+            <div class="ul graphikWeb">
+              <ul>
+                <li>
+                  <span>24/7 Email & Chat Support</span>
+                </li>
+                <li>
+                  <span>Custom-Coded and Pre-built Email Templates</span>
+                </li>
+                <li>
+                  <span>Multivariate and A/B Testing</span>
+                </li>
+                <li>
+                  <span>Enhanced Automated Customer Journeys</span>
+                </li>
+                <li>
+                  <span> Predictive Segmentation </span>
+                </li>
+                <li id="noborder1">
+                  
+                  <span class="na">Assisted Onboarding</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="typeOfMemberShip meansWeb">Essentials</h3>
+            <p class="membershipPara graphikWeb">
+              Send the right content at the right time with testing and scheduling
+              features.
+            </p>
+            <p class="graphikWeb">Starts at</p>
+            <h3 class="price meansWeb"><sup>₹</sup>770</h3>
+            <p class="graphikWeb">/month based on 500 contacts*</p>
+  
+            <div class="ul graphikWeb">
+              <ul>
+                <li>
+                  <span>24/7 Email & Chat Support</span>
+                </li>
+                <li>
+                  <span>Pre-built Email Templates</span>
+                </li>
+                <li><span>A/B Testing</span></li>
+                <li>
+                  <span>Basic Automated Customer Journeys</span>
+                </li>
+                <li>
+                  
+                  <span class="na"> Predictive Segmentation </span>
+                </li>
+                <li id="noborder3">
+                  
+                  <span class="na">Assisted Onboarding</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="typeOfMemberShip meansWeb">Free</h3>
+            <p class="membershipPara graphikWeb">
+              Easily create email campaigns and learn more about your customers.
+            </p>
+            <p class="graphikWeb">Starts at</p>
+            <h3 class="price meansWeb"><sup>₹</sup>0</h3>
+            <p class="graphikWeb">/month based on 500 contacts*</p>
+  
+            <div class="ul graphikWeb">
+              <ul>
+                <li>
+                  <span>Email support for first 30 days</span>
+                </li>
+                <li>
+                  <span>Pre-built Email Templates</span>
+                </li>
+                <li>
+                  
+                  <span class="na">A/B Testing</span>
+                </li>
+                <li>
+                  
+                  <span class="na">Basic Automated Customer Journeys</span>
+                </li>
+                <li>
+                  
+                  <span class="na"> Predictive Segmentation </span>
+                </li>
+                <li id="noborder3">
+                  </i
+                  ><span class="na">Assisted Onboarding</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p id="bottompara" class="graphikWeb">
+          <span> <u>*Overrages</u></span> apply if contact or email send limit is
+          exceeded. Free plan sending will be paused if contact or email send
+          limit is exceeded. <span id="learnmore">Learn more</span>
+        </p>
+        <!-- <button id="btmbtn">See all plan details</button> -->
+        <div class="bottompara center">
+            <a href="" class=" bottompara_btn float_btn graphikWeb">See all plan details</a>
+        </div>
+      </div>
 
-    <div id="GifSection">
+
+    <!-- Gif Section 1 -->
+
+    <div id="GifSection1">
         <div class="GifSection_Heading">
             <h1 class="meansWeb">Generate up to 4x more orders* with Customer Journey Builder automations</h1>
         </div>
@@ -349,60 +920,242 @@
                 <p class="graphikWeb">
                     Drive more traffic and sales by setting up automations that trigger emails based on customer behavior with our Customer Journey Builder.
                 </p>
-                <a href="" class="graphikWeb">Learn More ></a>
+                <a href=""  class="graphikWeb">
+                    Learn more &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
+                </a>                
+            </div>
+        </div>
+        <div class="GifSection_inner">
+            <div class="Gif_left">
+                <img src="/GIFs/1_2.gif" alt="">
+            </div>
+            <div class="Gif_right">
+                <h3 class="graphikWeb">
+                    Discover new ways to automate
+                </h3>
+                <p class="graphikWeb">
+                    Get a head start with pre-built journeys that help you cross-sell your products, recover abandoned carts, re-engage existing customers, and win new ones.
+                </p>
+                <a href=""  class="graphikWeb">
+                    Learn more &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
+                </a>
+            </div>
+        </div>
+        <div class="GifSection_inner">
+            <div class="Gif_left">
+                <img src="/GIFs/1_3.gif" alt="">
+            </div>
+            <div class="Gif_right">
+                <h3 class="graphikWeb">
+                    Keep your emails relevant and your brand growing
+                </h3>
+                <p class="graphikWeb">
+                    Deliver personalized emails based on their buying behavior, survey responses, chat interactions, and support tickets to promote loyalty and growth.
+                </p>
+                <a href=""  class="graphikWeb">
+                    Learn more &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
+                </a>
             </div>
         </div>
     </div>
 
-    <div id="bigbox">
-        <h1>Find the right plan</h1>
-        <div id="plan">
-            <div id="box1">
-                <h3>Premium</h3>
-                <h6>Our most advanced tools, unlimited contacts, and priority support; built for teams.</h8>
-                <h1>₹23,000</h1>
-                <p>1. Phone & Priority Support</p>
-                <p>2. Custom-Coded and Pre-built Email Templates</p>
-                <p>3. Multivariate and A/B Testing</p>
-                <p>4. Enhanced Automated Customer Journeys</p>
-                <p>5. Predictive Segmentation</p>
-                <p>6. Assisted Onboarding</p> 
-            </div>
+    <!-- Keep customers ready Section 2 -->
 
-            <div id="box1">
-                <h3>Standard</h3>
-                <h6>Sell even more with personalization, optimization tools, and enhanced automations.</h8>
-                <h1>₹1,150</h1>
-                <p>1. 24/7 Email & Chat Support</p>
-                <p>2. Custom-Coded and Pre-built Email Templates</p>
-                <p>3. A/B Testing</p>
-                <p>4. Enhanced Automated Customer Journeys</p>
-                <p>5. Predictive Segmentation</p>
-            </div>
+    <div id="KeepCustomersReady">
+        <div class="Keep_left">
+            <h2 class="meansWeb">Keep customers ready to buy with engaging content</h2>
+            <h4 class="graphikWeb">Content Optimizer</h4>
+            <p class="graphikWeb">Learn how your emails compare to the top-performing campaigns in your industry and get data-driven suggestions for improving your copy, imagery, and layout.</p>
+            <a href=""  class="graphikWeb">
+                Learn more &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
+            </a>            
+        </div>
+        <div class="Keep_right">
+            <img src="/Homepage_Images/mobile.png" alt="">
+        </div>
+    </div>
 
-            <div id="box1">
-                <h3>Essentials</h3>
-                <h6>Send the right content at the right time with testing and scheduling features.</h8>
-                <h1>₹770</h1>
-                <p>1. 24/7 Email & Chat Support</p>
-                <p>2. Pre-built Email Templates</p>
-                <p>3. A/B Testing</p>
-                <p>4. Basic Automated Customer Journeys</p>
-                 
+    <!-- Gif Section 2 -->
+
+    <div id="GifSection2">
+        <div class="GifSection_Heading">
+            <h1 class="meansWeb">Get up to 88% more revenue* with our Customer Lifetime Value and Likelihood to Purchase segments</h1>
+        </div>
+        <div class="GifSection_inner">
+            <div class="Gif_left">
+                <img src="/GIFs/2_1.gif" alt="">
             </div>
-            <div id="box1">
-                <h3>Free</h3>
-                <h6>Easily create email campaigns and learn more about your customers.</h8>
-                <h1>₹0</h1>
-                <p>1. Email support for first 30 days</p>
-                <p>2. Pre-built Email Templates</p>
+            <div class="Gif_right">
+                <h3 class="graphikWeb">
+                    Most loyal and valuable customers
+                </h3>
+                <p class="graphikWeb">
+                    WMB will help you focus on your most loyal and valuable customers.
+                </p>
+                <a href=""  class="graphikWeb">
+                    Learn more &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
+                </a>
             </div>
         </div>
-        <button id="more">See More</button>
+        <div class="GifSection_inner">
+            <div class="Gif_left">
+                <img src="/GIFs/2_2.gif" alt="">
+            </div>
+            <div class="Gif_right">
+                <h3 class="graphikWeb">
+                    Predict who’s likely to buy again
+                </h3>
+                <p class="graphikWeb">
+                    Create segments of customers based on their lifetime value and likelihood to purchase.
+                </p>
+                <a href=""  class="graphikWeb">
+                    Learn more &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
+                </a>
+            </div>
+        </div>
+        <div class="GifSection_inner">
+            <div class="Gif_left">
+                <img src="/GIFs/2_3.gif" alt="">
+            </div>
+            <div class="Gif_right">
+                <h3 class="graphikWeb">
+                    Build customers for life
+                </h3>
+                <p class="graphikWeb">
+                    Use our intelligent predictions to tighten your targeting strategy, strengthen customer relationships, and drive repeat sales.
+                </p>
+                <a href=""  class="graphikWeb">
+                    Learn more &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- integrations Section -->
+
+    <div id="integrations">
+        <div class="integrations_Heading">
+            <h1 class="meansWeb">Bring in more data, drive more growth with our integrations</h1>
+        </div>
+        <div class="integrations_inner">
+            <div class="integrations_card">
+                <div class="integrations_card_left">
+                    <img src="https://eep.io/images/yzco4xsimv0y/egMxvwdsj41K5eESLhWBO/cf823adbd311e33919f97ffc5bf3181d/Canva.jpg?w=196&fm=webp&q=80" alt="">
+                </div>  
+                <div class="integrations_card_right">
+                    <h4 class="meansWeb">Canva</h4>
+                    <p class="graphikWeb">
+                        Create compelling visuals for your marketing.
+                    </p>
+                </div>     
+            </div>
+            <div class="integrations_card">
+                <div class="integrations_card_left">
+                    <img src="https://eep.io/images/yzco4xsimv0y/51oq4AakIqo8fATlHgqHK0/02a750b1c1a16745296dca6fa7cb830c/Salesforce__1_.jpg?w=196&fm=webp&q=80" alt="">
+                </div>  
+                <div class="integrations_card_right">
+                    <h4 class="meansWeb">WMB for Salesforce</h4>
+                    <p class="graphikWeb">
+                        Sync your WMB subscribers and Salesforce® leads across platforms.
+                    </p>
+                </div>     
+            </div>
+            <div class="integrations_card">
+                <div class="integrations_card_left">
+                    <img src="https://eep.io/images/yzco4xsimv0y/67trWJLKtKcvrqlKYSlskE/696ad499e0cc60aa7392521a6a7cfd90/Instagram__1_.jpg?w=196&fm=webp&q=80" alt="">
+                </div>  
+                <div class="integrations_card_right">
+                    <h4 class="meansWeb">Instagram</h4>
+                    <p class="graphikWeb">
+                        Promote and share your Instagram posts in email campaigns.
+                    </p>
+                </div>     
+            </div>
+            <div class="integrations_card">
+                <div class="integrations_card_left">
+                    <img src="https://eep.io/images/yzco4xsimv0y/44dW9Z4hibyDYi0qggfets/b01884985e996ffb5dc133556b92bb7a/Shopify__1_.jpg?w=196&fm=webp&q=80" alt="">
+                </div>  
+                <div class="integrations_card_right">
+                    <h4 class="meansWeb">Shopify</h4>
+                    <p class="graphikWeb">
+                        Sync Shopify customers, products, and purchase data to WMB.
+                    </p>
+                </div>     
+            </div>
+            <div class="integrations_card">
+                <div class="integrations_card_left">
+                    <img src="https://eep.io/images/yzco4xsimv0y/7mpZ7UZrdzk2BmWX1OnRvb/5e610ecd21eeb25d0b82b098ce424e34/Google_Analytics2.jpg?w=196&fm=webp&q=80" alt="">
+                </div>  
+                <div class="integrations_card_right">
+                    <h4 class="meansWeb">Google Analytics</h4>
+                    <p class="graphikWeb">
+                        Unlock powerful insights with campaign, website, or landing page data.
+                    </p>
+                </div>     
+            </div>
+            <div class="integrations_card">
+                <div class="integrations_card_left">
+                    <img src="https://eep.io/images/yzco4xsimv0y/2uruOq31Y1FKdghFWn5zMg/8a35f3f9e463ba34038f3c3f16ccb635/WooCommerce.jpg?w=196&fm=webp&q=80" alt="">
+                </div>  
+                <div class="integrations_card_right">
+                    <h4 class="meansWeb">WooCommerce</h4>
+                    <p class="graphikWeb">
+                        Power your ecommerce store with smart marketing features.
+                    </p>
+                </div>     
+            </div>
+            <div class="integrations_card">
+                <div class="integrations_card_left">
+                    <img src="https://eep.io/images/yzco4xsimv0y/uZVnrVt3DO1G4Ec5G4pvs/e6c9d3c2613827f7dd238f1c5e0b02d9/Quickbooks.jpg?w=196&fm=webp&q=80" alt="">
+                </div>  
+                <div class="integrations_card_right">
+                    <h4 class="meansWeb">QuickBooks Online</h4>
+                    <p class="graphikWeb">
+                        Bring together your marketing tools and invoice data.
+                    </p>
+                </div>     
+            </div>
+            <div class="integrations_card">
+                <div class="integrations_card_left">
+                    <img src="https://eep.io/images/yzco4xsimv0y/2klSrOoLZKmLuGKZjKT9o3/ca400f60c2f3673f3ab9b52f4d03360d/Squarespace.jpg?w=196&fm=webp&q=80" alt="">
+                </div>  
+                <div class="integrations_card_right">
+                    <h4 class="meansWeb">Squarespace Commerce</h4>
+                    <p class="graphikWeb">
+                        Market your ecommerce business and drive sales.
+                    </p>
+                </div>     
+            </div>
+            <div class="integrations_card">
+                <div class="integrations_card_left">
+                    <img src="https://eep.io/images/yzco4xsimv0y/26deBkGp3A5Pj7suZ9oV7V/858e8a4603707166988a3282bca7e29b/Zapier.jpg?w=196&fm=webp&q=80" alt="">
+                </div>  
+                <div class="integrations_card_right">
+                    <h4 class="meansWeb">Zapier</h4>
+                    <p class="graphikWeb">
+                        Automatically pass data between web services without 
+                    </p>
+                </div>     
+            </div>
+        </div>
+        <div class="integrations_button">
+            <a href=""  class="graphikWeb">
+                View all 300+ integrations &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
+            </a>  
+        </div>
     </div>
     
+    <!-- Disclaimers -->
+    <div id="disclaimers">
+        <ol class="graphikWeb"><span>*Disclaimers </span>  
+            <li>Mailchimp is the #1 email marketing and automation brand based on competitor brands' publicly available data on worldwide numbers of customers in 2021 / 2022.</li>
+            <li>Generate up to 4X more orders with Customer Journey Builder automations based on orders generated through user's connected stores with automations versus when they used bulk emails.</li>
+            <li>Get up to 88% more revenue based on emails sent with predicted segments against non-predictive segmented emails for users with connected stores only. Standard or Premium Plans only.<br>
+            Availability of features and functionality varies by plan type. For details, view plans and pricing.</li>
+        </ol>
+    </div>
 
 
-    <div style="height:500px;background-color:hotpink"></div>
+    <div style="height:100px;background-color:hotpink"></div>
 </body>
 </html>
