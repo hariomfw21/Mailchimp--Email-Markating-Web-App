@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="login_signup_style.css">
+<style>
+    form{
+        width: 28%;
+    }
+    form input{
+        width: auto;
+    }
+</style>
+<body>
+
+   
+    
+    <form style="margin-bottom: 170px;">
+        <h1>Enter Otp</h1>
+
+        <input id="otp_entered" style="text-align: center; " type="number" name="" id="">
+        <button id="otp_submit" >Submit OTP</button>
+    </form>
+    
+   
+    </body>
+</html>
+<script>
+    let price=localStorage.getItem("Price");
+    let plan=localStorage.getItem("Plan");
+
+    obj=JSON.parse(localStorage.getItem("login_user")) || {};
+    // if(obj.name==undefined){
+    //     document.querySelector("#sign_out").style.display="none";
+    //     document.querySelector("#username").style.display="none";
+    // }else{
+    //     document.querySelector("#sign_in").style.display="none";
+    //     document.querySelector("#sign_out").style.display="block";
+    //     document.querySelector("#username").style.display="block";
+    //     document.querySelector("#username").innerText="Hello, "+obj.name;
+    // }
+
+    sign_out=()=>{
+        obj={}
+        localStorage.setItem("login_user", JSON.stringify(obj));
+        window.location.href = "/";
+    }
+
+    let date= new Date();
+    var year = date.getFullYear();
+    var mes = date.getMonth()+1;
+    var dia = date.getDate();
+    var today =dia+"-"+mes+"-"+year;
+    
+    let hours= date.getHours();
+    let mins= date.getMinutes();
+    let sec= date.getSeconds();
+    var time = hours+":"+mins+":"+sec;
+    let arr=time.split(":")
+    time=`${arr[0]}h:${arr[1]}m:${arr[2]}s`;
+    var date_time=today+" ► "+time;
+    // console.log(date_time)
+
+    document.querySelector("#otp_submit").addEventListener("click",function(){
+        otp=document.querySelector("#otp_entered").value;
+        if(otp=="1234"){
+            window.location.href = "/index.html";
+            alert("Payment Successful");
+
+            let userData= JSON.parse(localStorage.getItem("UserData")) || [];
+            userData.forEach(element => {
+                if(element.username==obj.name){
+                    element.is_subscribed="Subscribed";
+                    obj.subscriber=element.is_subscribed;
+                    element.plan=plan,
+                    element.price=price,
+                    element.time=date_time;
+                    element.subscription_period="1 Month";
+                    localStorage.setItem("login_user", JSON.stringify(obj));
+                    localStorage.setItem("UserData", JSON.stringify(userData));                    
+                }
+            });
+
+            // window.location.href = "signup.html";
+        }else{
+            alert("Incorrect OTP");
+        }
+    })
+</script>

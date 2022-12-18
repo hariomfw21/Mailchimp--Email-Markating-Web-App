@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="login_signup_style.css">
+<link rel="shortcut icon" type="image/png" href="images/logo/cloudtv.ico"/>
+<title>Cloud TV</title>
+<body>
+
+   
+
+    <form style="width:90%;" action="">
+        <h2>Admin Dashoard</h2><br>
+        <h5 for="">Select to see the Subscribed and Not Subscribed Users</h5>
+        <select name="" id="">
+            <option value="">All</option>
+            <option value="Subscribed">Subscribed</option>
+            <option value="Not Subscribed">Not Subscribed</option>
+        </select>
+        <table style="font-size: 15px;">
+            <thead>
+                <tr>
+                    <th>User's Name</th>
+                    <th>User's Email Address</th>
+                    <th>User's Password</th>
+                    <th>Subscribed User</th>
+                    <th>Subscription Plan</th>
+                    <th>Subscription Price</th>
+                    <th>Subscription Purchased Date & Time</th>
+                    <th>Subscription Period</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </form>
+    
+    
+    
+    </body>
+</html>
+<script>
+
+let userData= JSON.parse(localStorage.getItem("UserData")) || [];
+
+
+displayTable=(data)=>{
+    document.querySelector("tbody").innerHTML="";
+    data.forEach((el,i)=>{
+        let name=document.createElement("td");
+        name.innerText=el.username;
+
+        let email=document.createElement("td");
+        email.innerText=el.email;
+
+        let pass=document.createElement("td");
+        pass.innerText=el.password;
+
+        let is_subscribed=document.createElement("td");
+        is_subscribed.innerText=el.is_subscribed;
+        if(is_subscribed.innerText=="Subscribed"){
+            is_subscribed.setAttribute("class","green")
+        }else{            
+            is_subscribed.setAttribute("class","red")
+        }
+
+        let plan=document.createElement("td");
+        plan.innerText=el.plan;
+
+        let price=document.createElement("td");
+        price.innerText=el.price;
+        
+        let time=document.createElement("td");
+        time.innerText=el.time;
+
+        let subscription=document.createElement("td");
+        subscription.innerText=el.subscription_period;
+
+        let tr=document.createElement("tr");
+        tr.append(name,email,pass,is_subscribed,plan,price,time,subscription);
+
+        document.querySelector("tbody").append(tr);
+    })
+
+}
+
+displayTable(userData);
+
+document.querySelector("select").addEventListener("change",function(){
+    x=document.querySelector("select").value;
+    if(x!==""){
+        let filtered_Data=userData.filter((el)=>{;
+        return el.is_subscribed==x;
+        })
+        displayTable(filtered_Data);
+    }else{
+        displayTable(userData);
+    }
+    
+})
+
+</script>

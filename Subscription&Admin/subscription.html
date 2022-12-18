@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="login_signup_style.css">
+</head>
+
+<body>
+
+    
+    <form action="">
+        <h1>Buy Subscription</h1>
+        <h1><span class="blue" id="priceAmount">₹27000</span><span>/month</span></h1>
+        <br>
+        <div id="form_grid">
+            <div>
+                <label for="">Plan Name</label>
+                <input id="plan_input" type="text" placeholder="---- ---- ---- ----" readonly>
+            </div>
+            <div>
+                <label for="">Payable Amount</label>
+                <input id="price_input" type="text" placeholder="---- ---- ---- ----" readonly>
+            </div>
+            <div>
+                <label for="">Card Number</label>
+                <input type="number" id="card_num" placeholder="---- ---- ---- ----" size="16" required>
+            </div>
+            <div>
+                <label for="">CVV</label>
+                <input type="number" id="cvv" placeholder="---" min="" required>
+            </div>
+            <div>
+                <label for="">Expiry Date</label>
+                <input type="date" id="date" value="" required>
+            </div>
+            <div>
+                <label for="">Name on the card</label>
+                <input type="text" id="name" placeholder="Enter Name on the card" required>    
+            </div>
+        </div>
+        
+
+        <!-- <label for="">Plan Name</label>
+        <input id="plan_input" type="text" placeholder="---- ---- ---- ----" readonly>
+
+        <label for="">Payable Amount</label>
+        <input id="price_input" type="text" placeholder="---- ---- ---- ----" readonly>
+
+        <label for="">Card Number</label>
+        <input type="number" id="card_num" placeholder="---- ---- ---- ----" size="16" required>
+
+        <label for="">CVV</label>
+        <input type="number" id="cvv" placeholder="---" min="" required>
+
+        <label for="">Expiry Date</label>
+        <input type="date" id="date" value="" required>
+
+        <label for="">Name on the card</label>
+        <input type="text" id="name" placeholder="Enter Name on the card" required> -->
+
+        <input type="submit" value="Pay Now">
+    </form>
+    
+    
+  
+    </body>
+</html>
+<script>
+
+    let price=localStorage.getItem("Price") || 0;
+    let plan=localStorage.getItem("Plan") || "Free Plan";
+    // console.log(price,plan)
+
+    document.getElementById("plan_input").placeholder=`${plan}`;
+    document.getElementById("price_input").placeholder=`${price}`;
+    document.getElementById("priceAmount").innerText=`₹${price}`;
+    
+    // obj=JSON.parse(localStorage.getItem("login_user")) || {};
+    // if(obj.name==undefined){
+    //     document.querySelector("#sign_out").style.display="none";
+    //     document.querySelector("#username").style.display="none";
+    // }else{
+    //     document.querySelector("#sign_in").style.display="none";
+    //     document.querySelector("#sign_out").style.display="block";
+    //     document.querySelector("#username").style.display="block";
+    //     document.querySelector("#username").innerText="Hello, "+obj.name;
+    // }
+
+    // sign_out=()=>{
+    //     obj={}
+    //     localStorage.setItem("login_user", JSON.stringify(obj));
+    //     window.location.href = "/index.html";
+    // }
+
+
+    document.querySelector("form").addEventListener("submit",function(){
+        event.preventDefault();
+        let num= document.querySelector("#card_num").value;
+        let cvv= document.querySelector("#cvv").value;
+        let date= document.querySelector("#date").value;
+        let name= document.querySelector("#name").value;
+        let msg="";
+        if(num=="1234567890123456" && cvv=="123" && date=="1997-01-13" ){
+            alert("Otp sent on your mobile");
+            window.location.assign("/Subscription&Admin/otp.html");
+        }if(num!=="1234567890123456"){
+            msg= "Wrong Creadentials- ";
+            msg+=" card number "
+        }if(cvv!=="123"){
+            msg+=" cvv "
+        }if(date!=="1997-01-13"){
+            msg+=" date "
+        }
+        if(msg!==""){
+            alert(msg);
+        }
+    })
+
+    
+</script>
