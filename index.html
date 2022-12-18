@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/header.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="/footer.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <!-- <link rel="shortcut icon" href="/fw22_0276/Green Bird Creative Business Logo Design.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="/fw22_0276/fav.png" type="image/x-icon">
+    <title>Where is my Brand</title>
     <style>
         /* Global */
         *{
@@ -65,6 +72,7 @@
         }
         #TurnEmailsIntoRevenue a{
             background-color: #FFE01B;
+            /* width: 20%  ; */
         }
         
         /* Convert with Automations */
@@ -532,7 +540,11 @@
             }     
             #planbox > h2 {
                 font-size: 35px;
-            } 
+            }
+
+            #Header,#mySidenav,#myinnerreside-nav{
+                display:none;
+            }
         }
     
         /* Mobile View */
@@ -673,489 +685,733 @@
             #planbox > h2 {
                 font-size: 28px;
             } 
+            
+            #Header,#mySidenav,#myinnerreside-nav{
+                display:none;
+            }
         }
         
     </style>
 </head>
 <body>
+    <!-- Header  Import -->
+    <div id="Header">
+        <div class="nev-bar">
+            <button onmouseover="openNav()" class="nev-barAncer">Product</button>
+            <button onmouseover="openNavRes()" class="nev-barAncer">
+                Resource
+            </button>
+            <button onmouseover="openNavIns()" class="nev-barAncer">
+                Inspration
+            </button>
+            <button  onclick='window.location.href="/fw22_0276/Subscription Page/pricing.html"'  onmouseover="openNavPri()" class="nev-barAncer">Pricing</button>
+        </div>
+        <!-- <div class="nev-bar">
+            <img src="/pics and logo/Green_Bird_Creative_Business_Logo_Design-removebg-preview (1).png" alt="logo" />
+            <h2>WMB</h2>
+        </div> -->
+        <div onclick='window.location.href="/index.html"'  class="nev-bar">
+            <img style="cursor: pointer;" src="/pics and logo/Green_Bird_Creative_Business_Logo_Design-removebg-preview (1).png" alt="logo" />
+            <h2 style="cursor: pointer;" >WMB</h2>
+        </div>
 
-    <div style="height:100px;background-color:hotpink"></div>
+        <div class="nev-bar">
+            <div>
+                <p></p>&nbsp;&nbsp;Sales:+1 (800) 315-5939</p>
+            </div>
+            <div class="icon-nav">
+                <i style="padding-left: 0px;" class="material-icons">search</i>
+                <i style="padding-left: 0px;" class="material-icons">delete</i>                
+                <img id="star" style="padding-left: 10px;" width="40px" src="/Homepage_Images/star.png" alt="user">
+            </div>
+
+            <!-- Nev-bar login sign up button -->
+
+            <div>
+                <a id="login" href="/fw22_0276/login.html" style="margin-top:0px; padding:4px 8px; background-color: #FFE01B;" class="float_btn graphikWeb">Log In</a>
+                <a id="register" href="/fw22_0276/signUp.html" style="margin-top:0px; padding:4px 8px; background-color: #FFE01B;" class="float_btn graphikWeb">Sign Up</a>
+                
+                <h5 id="username"></h5>                
+                <a  id="sign_out" href="/index.html" onclick="sign_out()" style="margin-top:5px; padding:4px 8px; display: none; display: inline-block;background-color: #FFE01B;" class="float_btn graphikWeb">Log Out</a>
+                
+            </div>
+        </div>
+    </div>
+    <div></div>
+
+    <!--  side nav -->
+
+    <div id="mySidenav" class="sidenav" >
+        <div class="nev-bar">
+            <button onmouseover="openNav()" class="nev-barAncer">Product</button>
+            <button onmouseover="openNavRes()" class="nev-barAncer">
+                Resource
+            </button>
+            <button onmouseover="openNavIns()" class="nev-barAncer">
+                Inspration
+            </button>
+            <button onclick='window.location.href="/fw22_0276/Subscription Page/pricing.html"' onmouseover="openNavPri()" class="nev-barAncer">Pricing</button>
+        </div>
+        <br />
+        <div id="resource-nav">
+            <!-- code in script -->
+            <!-- code in script -->
+            <!-- code in script -->
+            <!-- code in script -->
+        </div>
+    </div>
+    <!-- side nav ^^^^ -->
+    <div id="myinnerreside-nav" class="innerside-nav" onmouseleave="closeInnerNav(),closeNav()">
+        <div id="innerresorce-nav">
+            <ul class="ullist-innernev">
+                <li>
+                    <!-- <a class="innernevAnc" href="#">Website</a> -->
+                    <a class="innernevAnc" href="/MarketingCRM/MarketingCRM.html">Marketing CRM</a>
+                    <p class="innernavp">
+                        Create a free website that comes with built-in markating tool
+                    </p>
+                </li>
+
+                <br />
+
+                <li>
+                    <!-- <a class="innernevAnc" href="#">Online Store</a> -->
+                    <a class="innernevAnc" href="/contentStudio/contentStudio.html">Content Studio</a>
+                    <p class="innernavp">
+                        Get beautiful onbrand design made for you with the power Of AI
+                    </p>
+                </li>
+
+                <br />
+
+                <li>
+                    <a class="innernevAnc" href="#">Dynamic Content</a>
+                    <p class="innernavp">
+                        Pretionlise Individual content Block with You Emails.
+                    </p>
+                </li>
+
+                <br />
+
+                <li>
+                    <a class="innernevAnc" href="#">Subject Line Helper</a>
+                    <p class="innernavp">
+                        Get real-time feedback on how to refine your subject lines.
+                    </p>
+                </li>
+
+                <br />
+
+                <li>
+                    <a class="innernevAnc" href="#">Campaign Templates</a>
+                    <p class="innernavp">
+                        100+ pre-designed email and landing page templates that fit any
+                        message.
+                    </p>
+                </li>
+
+                <br />
+
+                <hr />
+            </ul>
+        </div>
+    </div>
+
+    <!-- Header  End -->
+
+
+    <!-- <div style="height:100px;background-color:hotpink"></div> -->
     <!-- Turn Emails into Revenue -->
 
-    <div id="TurnEmailsIntoRevenue" class="center">
-        <h1 class="meansWeb">Turn Emails into Revenue</h1>
-        <p class="graphikWeb">Win new customers with the #1 email marketing and automations brand* that recommends ways to get more opens, clicks, and sales.</p>
-        <a href="" class="float_btn graphikWeb">Sign Up</a>
-    </div>
+    <!-- <div id="Homepage"> -->
 
-    <!-- Convert with Automations -->
+        <div id="TurnEmailsIntoRevenue" class="center">
+            <h1 class="meansWeb">Turn Emails into Revenue</h1>
+            <p class="graphikWeb">Win new customers with the #1 email marketing and automations brand* that recommends ways to get more opens, clicks, and sales.</p>
+            <a id="sign_up_top" href="/fw22_0276/signUp.html" class="float_btn graphikWeb">Sign Up</a>
+            <a id="buy_top" href="/fw22_0276/Subscription Page/pricing.html" class="float_btn graphikWeb">Buy Now</a>
+        </div>
 
-    <div id="ConvertWithAutomations">
-        <div class="cwa_main">
-            <div class="cwa_inner_img">
-                <h3 class="meansWeb">Convert With Automations</h3>
-                <img src="https://eep.io/images/yzco4xsimv0y/33f3mgIWbzKjIpIRJi2f5v/6bd36bba38b7f6a94d587605ab9a7d75/Desktop_Feature_Cards_1_Automations.jpeg?w=630&fm=webp&q=80" alt="">
+        <!-- Convert with Automations -->
+
+        <div id="ConvertWithAutomations">
+            <div class="cwa_main">
+                <div class="cwa_inner_img">
+                    <h3 class="meansWeb">Convert With Automations</h3>
+                    <img src="https://eep.io/images/yzco4xsimv0y/33f3mgIWbzKjIpIRJi2f5v/6bd36bba38b7f6a94d587605ab9a7d75/Desktop_Feature_Cards_1_Automations.jpeg?w=630&fm=webp&q=80" alt="">
+                </div>
+                <div class="cwa_inner_box">
+                    <p class="graphikWeb">Send the right message at the right time to convert more customers.</p>
+                    <a href="" class="float_btn graphikWeb">Learn more</a>
+                </div>
             </div>
-            <div class="cwa_inner_box">
-                <p class="graphikWeb">Send the right message at the right time to convert more customers.</p>
-                <a href="" class="float_btn graphikWeb">Learn more</a>
+            
+            <div class="cwa_main">
+                <div class="cwa_inner_img">
+                    <h3 class="meansWeb">Optimize AI & Analytics</h3>
+                    <img src="https://eep.io/images/yzco4xsimv0y/hBcOt3RZ5DOhMJD2Hi2Z2/96b28d17c45e9376731ad825b002b0ff/Desktop_Feature_Cards_2_Analytics.png?w=630&fm=webp&q=80" alt="">
+                </div>
+                <div class="cwa_inner_box">
+                    <p class="graphikWeb">Get AI-assisted suggestions to help make your content more engaging.</p>
+                    <a href="" class="float_btn graphikWeb">Learn more</a>
+                </div>
+            </div>
+            
+            <div class="cwa_main">
+                <div class="cwa_inner_img">
+                    <h3 class="meansWeb">Target with Segmentation</h3>
+                    <img src="https://eep.io/images/yzco4xsimv0y/5xqzo6y8Z7anw9VQXJarpj/5f91182af7bf16ecc34b487a619d0a54/Desktop_Feature_Cards_3_Segmentation.jpeg?w=630&fm=webp&q=80" alt="">
+                </div>
+                <div class="cwa_inner_box">
+                    <p class="graphikWeb">Boost customer loyalty by predicting the right customers to target.</p>
+                    <a href="" class="float_btn graphikWeb">Learn more</a>
+                </div>
+            </div>
+            
+            <div class="cwa_main">
+                <div class="cwa_inner_img">
+                    <h3 class="meansWeb">Sync with Integrations</h3>
+                    <img src="https://eep.io/images/yzco4xsimv0y/lsHRpmOI81ZcFS1Yld0Bs/1e2812587cd0f3089061bd4b513fd6d0/Desktop_Feature_Cards_4_Integrations.png?w=630&fm=webp&q=80" alt="">
+                </div>
+                <div class="cwa_inner_box">
+                    <p class="graphikWeb">Connect more tools, get more data, save time, and make better decisions.</p>
+                    <a href="" class="float_btn graphikWeb">Learn more</a>
+                </div>
+            </div>
+        </div>    
+        
+        <!-- Video Section -->
+
+        <div id="VideoSection">
+            <div class="videoContainer">
+                <iframe src="https://www.youtube.com/embed/2HFPdzThVDk?rel=0&showinfo=0&modestbranding=1"  frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+            <p class=graphikWeb>
+                Most email marketing platforms tell you how your campaigns perform. We analyze the data from the billions of emails we send to give you personalized recommendations for improving your content, targeting, and automations.
+            </p>
+        </div>
+
+        
+        <!--   Plan Section 1 -->
+        
+        <div id="planbox">
+            <h2 class="meansWeb">Find the right plan</h2>
+            <div id="plancards">
+            <div class="card">
+                <h3 class="typeOfMemberShip meansWeb">Premium</h3>
+                <p class="membershipPara graphikWeb">
+                Our most advanced tools, unlimited contacts, and priority support;
+                built for teams.
+                </p>
+                <p class="graphikWeb">Starts at</p>
+                <h3 class="price meansWeb"><sup>₹</sup>23,000</h3>
+                <p class="graphikWeb">/month based on 10,000 contacts*</p>
+    
+                <div class="ul graphikWeb">
+                <ul>
+                    <li>
+                    <span>Phone & Priority Support</span>
+                    </li>
+                    <li>
+                    <span>Custom-Coded and Pre-built Email Templates</span>
+                    </li>
+                    <li>
+                    <span>Multivariate and A/B Testing</span>
+                    </li>
+                    <li>
+                    <span>Enhanced Automated Customer Journeys</span>
+                    </li>
+                    <li>
+                    <span> Predictive Segmentation </span>
+                    </li>
+                    <li id="noborder">
+                    <span>Assisted Onboarding</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="typeOfMemberShip meansWeb">Standard</h3>
+                <p class="membershipPara graphikWeb">
+                Sell even more with personalization, optimization tools, and
+                automations.
+                </p>
+                <p class="graphikWeb">Starts at</p>
+                <h3 class="price meansWeb"><sup>₹</sup>1,150</h3>
+                <p class="graphikWeb">/month based on 500 contacts*</p>
+    
+                <div class="ul graphikWeb">
+                <ul>
+                    <li>
+                    <span>24/7 Email & Chat Support</span>
+                    </li>
+                    <li>
+                    <span>Custom-Coded and Pre-built Email Templates</span>
+                    </li>
+                    <li>
+                    <span>Multivariate and A/B Testing</span>
+                    </li>
+                    <li>
+                    <span>Enhanced Automated Customer Journeys</span>
+                    </li>
+                    <li>
+                    <span> Predictive Segmentation </span>
+                    </li>
+                    <li id="noborder1">
+                    
+                    <span class="na">Assisted Onboarding</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="typeOfMemberShip meansWeb">Essentials</h3>
+                <p class="membershipPara graphikWeb">
+                Send the right content at the right time with testing and scheduling
+                features.
+                </p>
+                <p class="graphikWeb">Starts at</p>
+                <h3 class="price meansWeb"><sup>₹</sup>770</h3>
+                <p class="graphikWeb">/month based on 500 contacts*</p>
+    
+                <div class="ul graphikWeb">
+                <ul>
+                    <li>
+                    <span>24/7 Email & Chat Support</span>
+                    </li>
+                    <li>
+                    <span>Pre-built Email Templates</span>
+                    </li>
+                    <li><span>A/B Testing</span></li>
+                    <li>
+                    <span>Basic Automated Customer Journeys</span>
+                    </li>
+                    <li>
+                    
+                    <span class="na"> Predictive Segmentation </span>
+                    </li>
+                    <li id="noborder3">
+                    
+                    <span class="na">Assisted Onboarding</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="typeOfMemberShip meansWeb">Free</h3>
+                <p class="membershipPara graphikWeb">
+                Easily create email campaigns and learn more about your customers.
+                </p>
+                <p class="graphikWeb">Starts at</p>
+                <h3 class="price meansWeb"><sup>₹</sup>0</h3>
+                <p class="graphikWeb">/month based on 500 contacts*</p>
+    
+                <div class="ul graphikWeb">
+                <ul>
+                    <li>
+                    <span>Email support for first 30 days</span>
+                    </li>
+                    <li>
+                    <span>Pre-built Email Templates</span>
+                    </li>
+                    <li>
+                    
+                    <span class="na">A/B Testing</span>
+                    </li>
+                    <li>
+                    
+                    <span class="na">Basic Automated Customer Journeys</span>
+                    </li>
+                    <li>
+                    
+                    <span class="na"> Predictive Segmentation </span>
+                    </li>
+                    <li id="noborder3">
+                    </i
+                    ><span class="na">Assisted Onboarding</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <p id="bottompara" class="graphikWeb">
+            <span> <u>*Overrages</u></span> apply if contact or email send limit is
+            exceeded. Free plan sending will be paused if contact or email send
+            limit is exceeded. <span id="learnmore">Learn more</span>
+            </p>
+            <!-- <button id="btmbtn">See all plan details</button> -->
+            <div class="bottompara center">
+                <a href="/fw22_0276/Subscription Page/pricing.html" class=" bottompara_btn float_btn graphikWeb">See all plan details</a>
+            </div>
+        </div>
+
+
+        <!-- Gif Section 1 -->
+
+        <div id="GifSection1">
+            <div class="GifSection_Heading">
+                <h1 class="meansWeb">Generate up to 4x more orders* with Customer Journey Builder automations</h1>
+            </div>
+            <div class="GifSection_inner">
+                <div class="Gif_left">
+                    <img src="/GIFs/1_1.gif" alt="">
+                </div>
+                <div class="Gif_right">
+                    <h3 class="graphikWeb">
+                        Convert more customers at scale
+                    </h3>
+                    <p class="graphikWeb">
+                        Drive more traffic and sales by setting up automations that trigger emails based on customer behavior with our Customer Journey Builder.
+                    </p>
+                    <a href=""  class="graphikWeb">
+                        Learn more &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
+                    </a>                
+                </div>
+            </div>
+            <div class="GifSection_inner">
+                <div class="Gif_left">
+                    <img src="/GIFs/1_2.gif" alt="">
+                </div>
+                <div class="Gif_right">
+                    <h3 class="graphikWeb">
+                        Discover new ways to automate
+                    </h3>
+                    <p class="graphikWeb">
+                        Get a head start with pre-built journeys that help you cross-sell your products, recover abandoned carts, re-engage existing customers, and win new ones.
+                    </p>
+                    <a href=""  class="graphikWeb">
+                        Learn more &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="GifSection_inner">
+                <div class="Gif_left">
+                    <img src="/GIFs/1_3.gif" alt="">
+                </div>
+                <div class="Gif_right">
+                    <h3 class="graphikWeb">
+                        Keep your emails relevant and your brand growing
+                    </h3>
+                    <p class="graphikWeb">
+                        Deliver personalized emails based on their buying behavior, survey responses, chat interactions, and support tickets to promote loyalty and growth.
+                    </p>
+                    <a href=""  class="graphikWeb">
+                        Learn more &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Keep customers ready Section 2 -->
+
+        <div id="KeepCustomersReady">
+            <div class="Keep_left">
+                <h2 class="meansWeb">Keep customers ready to buy with engaging content</h2>
+                <h4 class="graphikWeb">Content Optimizer</h4>
+                <p class="graphikWeb">Learn how your emails compare to the top-performing campaigns in your industry and get data-driven suggestions for improving your copy, imagery, and layout.</p>
+                <a href=""  class="graphikWeb">
+                    Learn more &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
+                </a>            
+            </div>
+            <div class="Keep_right">
+                <img src="/Homepage_Images/mobile.png" alt="">
+            </div>
+        </div>
+
+        <!-- Gif Section 2 -->
+
+        <div id="GifSection2">
+            <div class="GifSection_Heading">
+                <h1 class="meansWeb">Get up to 88% more revenue* with our Customer Lifetime Value and Likelihood to Purchase segments</h1>
+            </div>
+            <div class="GifSection_inner">
+                <div class="Gif_left">
+                    <img src="/GIFs/2_1.gif" alt="">
+                </div>
+                <div class="Gif_right">
+                    <h3 class="graphikWeb">
+                        Most loyal and valuable customers
+                    </h3>
+                    <p class="graphikWeb">
+                        WMB will help you focus on your most loyal and valuable customers.
+                    </p>
+                    <a href=""  class="graphikWeb">
+                        Learn more &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="GifSection_inner">
+                <div class="Gif_left">
+                    <img src="/GIFs/2_2.gif" alt="">
+                </div>
+                <div class="Gif_right">
+                    <h3 class="graphikWeb">
+                        Predict who’s likely to buy again
+                    </h3>
+                    <p class="graphikWeb">
+                        Create segments of customers based on their lifetime value and likelihood to purchase.
+                    </p>
+                    <a href=""  class="graphikWeb">
+                        Learn more &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="GifSection_inner">
+                <div class="Gif_left">
+                    <img src="/GIFs/2_3.gif" alt="">
+                </div>
+                <div class="Gif_right">
+                    <h3 class="graphikWeb">
+                        Build customers for life
+                    </h3>
+                    <p class="graphikWeb">
+                        Use our intelligent predictions to tighten your targeting strategy, strengthen customer relationships, and drive repeat sales.
+                    </p>
+                    <a href=""  class="graphikWeb">
+                        Learn more &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- integrations Section -->
+
+        <div id="integrations">
+            <div class="integrations_Heading">
+                <h1 class="meansWeb">Bring in more data, drive more growth with our integrations</h1>
+            </div>
+            <div class="integrations_inner">
+                <div class="integrations_card">
+                    <div class="integrations_card_left">
+                        <img src="https://eep.io/images/yzco4xsimv0y/egMxvwdsj41K5eESLhWBO/cf823adbd311e33919f97ffc5bf3181d/Canva.jpg?w=196&fm=webp&q=80" alt="">
+                    </div>  
+                    <div class="integrations_card_right">
+                        <h4 class="meansWeb">Canva</h4>
+                        <p class="graphikWeb">
+                            Create compelling visuals for your marketing.
+                        </p>
+                    </div>     
+                </div>
+                <div class="integrations_card">
+                    <div class="integrations_card_left">
+                        <img src="https://eep.io/images/yzco4xsimv0y/51oq4AakIqo8fATlHgqHK0/02a750b1c1a16745296dca6fa7cb830c/Salesforce__1_.jpg?w=196&fm=webp&q=80" alt="">
+                    </div>  
+                    <div class="integrations_card_right">
+                        <h4 class="meansWeb">WMB for Salesforce</h4>
+                        <p class="graphikWeb">
+                            Sync your WMB subscribers and Salesforce® leads across platforms.
+                        </p>
+                    </div>     
+                </div>
+                <div class="integrations_card">
+                    <div class="integrations_card_left">
+                        <img src="https://eep.io/images/yzco4xsimv0y/67trWJLKtKcvrqlKYSlskE/696ad499e0cc60aa7392521a6a7cfd90/Instagram__1_.jpg?w=196&fm=webp&q=80" alt="">
+                    </div>  
+                    <div class="integrations_card_right">
+                        <h4 class="meansWeb">Instagram</h4>
+                        <p class="graphikWeb">
+                            Promote and share your Instagram posts in email campaigns.
+                        </p>
+                    </div>     
+                </div>
+                <div class="integrations_card">
+                    <div class="integrations_card_left">
+                        <img src="https://eep.io/images/yzco4xsimv0y/44dW9Z4hibyDYi0qggfets/b01884985e996ffb5dc133556b92bb7a/Shopify__1_.jpg?w=196&fm=webp&q=80" alt="">
+                    </div>  
+                    <div class="integrations_card_right">
+                        <h4 class="meansWeb">Shopify</h4>
+                        <p class="graphikWeb">
+                            Sync Shopify customers, products, and purchase data to WMB.
+                        </p>
+                    </div>     
+                </div>
+                <div class="integrations_card">
+                    <div class="integrations_card_left">
+                        <img src="https://eep.io/images/yzco4xsimv0y/7mpZ7UZrdzk2BmWX1OnRvb/5e610ecd21eeb25d0b82b098ce424e34/Google_Analytics2.jpg?w=196&fm=webp&q=80" alt="">
+                    </div>  
+                    <div class="integrations_card_right">
+                        <h4 class="meansWeb">Google Analytics</h4>
+                        <p class="graphikWeb">
+                            Unlock powerful insights with campaign, website, or landing page data.
+                        </p>
+                    </div>     
+                </div>
+                <div class="integrations_card">
+                    <div class="integrations_card_left">
+                        <img src="https://eep.io/images/yzco4xsimv0y/2uruOq31Y1FKdghFWn5zMg/8a35f3f9e463ba34038f3c3f16ccb635/WooCommerce.jpg?w=196&fm=webp&q=80" alt="">
+                    </div>  
+                    <div class="integrations_card_right">
+                        <h4 class="meansWeb">WooCommerce</h4>
+                        <p class="graphikWeb">
+                            Power your ecommerce store with smart marketing features.
+                        </p>
+                    </div>     
+                </div>
+                <div class="integrations_card">
+                    <div class="integrations_card_left">
+                        <img src="https://eep.io/images/yzco4xsimv0y/uZVnrVt3DO1G4Ec5G4pvs/e6c9d3c2613827f7dd238f1c5e0b02d9/Quickbooks.jpg?w=196&fm=webp&q=80" alt="">
+                    </div>  
+                    <div class="integrations_card_right">
+                        <h4 class="meansWeb">QuickBooks Online</h4>
+                        <p class="graphikWeb">
+                            Bring together your marketing tools and invoice data.
+                        </p>
+                    </div>     
+                </div>
+                <div class="integrations_card">
+                    <div class="integrations_card_left">
+                        <img src="https://eep.io/images/yzco4xsimv0y/2klSrOoLZKmLuGKZjKT9o3/ca400f60c2f3673f3ab9b52f4d03360d/Squarespace.jpg?w=196&fm=webp&q=80" alt="">
+                    </div>  
+                    <div class="integrations_card_right">
+                        <h4 class="meansWeb">Squarespace Commerce</h4>
+                        <p class="graphikWeb">
+                            Market your ecommerce business and drive sales.
+                        </p>
+                    </div>     
+                </div>
+                <div class="integrations_card">
+                    <div class="integrations_card_left">
+                        <img src="https://eep.io/images/yzco4xsimv0y/26deBkGp3A5Pj7suZ9oV7V/858e8a4603707166988a3282bca7e29b/Zapier.jpg?w=196&fm=webp&q=80" alt="">
+                    </div>  
+                    <div class="integrations_card_right">
+                        <h4 class="meansWeb">Zapier</h4>
+                        <p class="graphikWeb">
+                            Automatically pass data between web services without 
+                        </p>
+                    </div>     
+                </div>
+            </div>
+            <div class="integrations_button">
+                <a href=""  class="graphikWeb">
+                    View all 300+ integrations &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
+                </a>  
             </div>
         </div>
         
-        <div class="cwa_main">
-            <div class="cwa_inner_img">
-                <h3 class="meansWeb">Optimize AI & Analytics</h3>
-                <img src="https://eep.io/images/yzco4xsimv0y/hBcOt3RZ5DOhMJD2Hi2Z2/96b28d17c45e9376731ad825b002b0ff/Desktop_Feature_Cards_2_Analytics.png?w=630&fm=webp&q=80" alt="">
-            </div>
-            <div class="cwa_inner_box">
-                <p class="graphikWeb">Get AI-assisted suggestions to help make your content more engaging.</p>
-                <a href="" class="float_btn graphikWeb">Learn more</a>
-            </div>
+        <!-- Disclaimers -->
+        <div id="disclaimers">
+            <ol class="graphikWeb"><span>*Disclaimers </span>  
+                <li>Mailchimp is the #1 email marketing and automation brand based on competitor brands' publicly available data on worldwide numbers of customers in 2021 / 2022.</li>
+                <li>Generate up to 4X more orders with Customer Journey Builder automations based on orders generated through user's connected stores with automations versus when they used bulk emails.</li>
+                <li>Get up to 88% more revenue based on emails sent with predicted segments against non-predictive segmented emails for users with connected stores only. Standard or Premium Plans only.<br>
+                Availability of features and functionality varies by plan type. For details, view plans and pricing.</li>
+            </ol>
         </div>
-        
-        <div class="cwa_main">
-            <div class="cwa_inner_img">
-                <h3 class="meansWeb">Target with Segmentation</h3>
-                <img src="https://eep.io/images/yzco4xsimv0y/5xqzo6y8Z7anw9VQXJarpj/5f91182af7bf16ecc34b487a619d0a54/Desktop_Feature_Cards_3_Segmentation.jpeg?w=630&fm=webp&q=80" alt="">
-            </div>
-            <div class="cwa_inner_box">
-                <p class="graphikWeb">Boost customer loyalty by predicting the right customers to target.</p>
-                <a href="" class="float_btn graphikWeb">Learn more</a>
-            </div>
-        </div>
-        
-        <div class="cwa_main">
-            <div class="cwa_inner_img">
-                <h3 class="meansWeb">Sync with Integrations</h3>
-                <img src="https://eep.io/images/yzco4xsimv0y/lsHRpmOI81ZcFS1Yld0Bs/1e2812587cd0f3089061bd4b513fd6d0/Desktop_Feature_Cards_4_Integrations.png?w=630&fm=webp&q=80" alt="">
-            </div>
-            <div class="cwa_inner_box">
-                <p class="graphikWeb">Connect more tools, get more data, save time, and make better decisions.</p>
-                <a href="" class="float_btn graphikWeb">Learn more</a>
-            </div>
-        </div>
-    </div>    
     
-    <!-- Video Section -->
+    <!-- </div> -->
 
-    <div id="VideoSection">
-        <div class="videoContainer">
-            <iframe src="https://www.youtube.com/embed/2HFPdzThVDk?rel=0&showinfo=0&modestbranding=1"  frameborder="0" allowfullscreen>
-            </iframe>
-        </div>
-        <p class=graphikWeb>
-            Most email marketing platforms tell you how your campaigns perform. We analyze the data from the billions of emails we send to give you personalized recommendations for improving your content, targeting, and automations.
-        </p>
-    </div>
 
-      
-    <!--   Plan Section 1 -->
-    
-    <div id="planbox">
-        <h2 class="meansWeb">Find the right plan</h2>
-        <div id="plancards">
-          <div class="card">
-            <h3 class="typeOfMemberShip meansWeb">Premium</h3>
-            <p class="membershipPara graphikWeb">
-              Our most advanced tools, unlimited contacts, and priority support;
-              built for teams.
-            </p>
-            <p class="graphikWeb">Starts at</p>
-            <h3 class="price meansWeb"><sup>₹</sup>23,000</h3>
-            <p class="graphikWeb">/month based on 10,000 contacts*</p>
-  
-            <div class="ul graphikWeb">
+    <!-- <div style="height:100px;background-color:hotpink"></div> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Product</h4>
               <ul>
-                <li>
-                  <span>Phone & Priority Support</span>
-                </li>
-                <li>
-                  <span>Custom-Coded and Pre-built Email Templates</span>
-                </li>
-                <li>
-                  <span>Multivariate and A/B Testing</span>
-                </li>
-                <li>
-                  <span>Enhanced Automated Customer Journeys</span>
-                </li>
-                <li>
-                  <span> Predictive Segmentation </span>
-                </li>
-                <li id="noborder">
-                  <span>Assisted Onboarding</span>
-                </li>
+                <li><a href="#">why mailchamp?</a></li>
+                <li><a href="#">Product-Markating</a></li>
+                <li><a href="#">Email-Markating</a></li>
+                <li><a href="#">How we compair</a></li>
+                <li><a href="#">Gdpr comapirasion</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Status</a></li>
+                <li><a href="#">Mobile App</a></li>
               </ul>
             </div>
-          </div>
-          <div class="card">
-            <h3 class="typeOfMemberShip meansWeb">Standard</h3>
-            <p class="membershipPara graphikWeb">
-              Sell even more with personalization, optimization tools, and
-              automations.
-            </p>
-            <p class="graphikWeb">Starts at</p>
-            <h3 class="price meansWeb"><sup>₹</sup>1,150</h3>
-            <p class="graphikWeb">/month based on 500 contacts*</p>
-  
-            <div class="ul graphikWeb">
+            <div class="footer-col">
+              <h4>Resource</h4>
               <ul>
-                <li>
-                  <span>24/7 Email & Chat Support</span>
-                </li>
-                <li>
-                  <span>Custom-Coded and Pre-built Email Templates</span>
-                </li>
-                <li>
-                  <span>Multivariate and A/B Testing</span>
-                </li>
-                <li>
-                  <span>Enhanced Automated Customer Journeys</span>
-                </li>
-                <li>
-                  <span> Predictive Segmentation </span>
-                </li>
-                <li id="noborder1">
-                  
-                  <span class="na">Assisted Onboarding</span>
-                </li>
+                <li><a href="#">Markating-Labirary</a></li>
+                <li><a href="#">Free markating tool</a></li>
+                <li><a href="#">Markating Gresory</a></li>
+                <li><a href="#">International Direction</a></li>
               </ul>
             </div>
-          </div>
-          <div class="card">
-            <h3 class="typeOfMemberShip meansWeb">Essentials</h3>
-            <p class="membershipPara graphikWeb">
-              Send the right content at the right time with testing and scheduling
-              features.
-            </p>
-            <p class="graphikWeb">Starts at</p>
-            <h3 class="price meansWeb"><sup>₹</sup>770</h3>
-            <p class="graphikWeb">/month based on 500 contacts*</p>
-  
-            <div class="ul graphikWeb">
+            <div class="footer-col">
+              <h4>Community</h4>
               <ul>
-                <li>
-                  <span>24/7 Email & Chat Support</span>
-                </li>
-                <li>
-                  <span>Pre-built Email Templates</span>
-                </li>
-                <li><span>A/B Testing</span></li>
-                <li>
-                  <span>Basic Automated Customer Journeys</span>
-                </li>
-                <li>
-                  
-                  <span class="na"> Predictive Segmentation </span>
-                </li>
-                <li id="noborder3">
-                  
-                  <span class="na">Assisted Onboarding</span>
-                </li>
+                <li><a href="#">Agencies & Freelencers</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Event</a></li>
               </ul>
             </div>
-          </div>
-          <div class="card">
-            <h3 class="typeOfMemberShip meansWeb">Free</h3>
-            <p class="membershipPara graphikWeb">
-              Easily create email campaigns and learn more about your customers.
-            </p>
-            <p class="graphikWeb">Starts at</p>
-            <h3 class="price meansWeb"><sup>₹</sup>0</h3>
-            <p class="graphikWeb">/month based on 500 contacts*</p>
   
-            <div class="ul graphikWeb">
+            <div class="footer-col">
+              <h4>Company</h4>
               <ul>
-                <li>
-                  <span>Email support for first 30 days</span>
-                </li>
-                <li>
-                  <span>Pre-built Email Templates</span>
-                </li>
-                <li>
-                  
-                  <span class="na">A/B Testing</span>
-                </li>
-                <li>
-                  
-                  <span class="na">Basic Automated Customer Journeys</span>
-                </li>
-                <li>
-                  
-                  <span class="na"> Predictive Segmentation </span>
-                </li>
-                <li id="noborder3">
-                  </i
-                  ><span class="na">Assisted Onboarding</span>
-                </li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">NewsRoom</a></li>
+                <li><a href="#">Give Where you Live</a></li>
+                <li><a href="#">Annual - Report</a></li>
+                <li><a href="#">carrier</a></li>
+                <li><a href="#">Assesiblity</a></li>
               </ul>
             </div>
           </div>
         </div>
-        <p id="bottompara" class="graphikWeb">
-          <span> <u>*Overrages</u></span> apply if contact or email send limit is
-          exceeded. Free plan sending will be paused if contact or email send
-          limit is exceeded. <span id="learnmore">Learn more</span>
-        </p>
-        <!-- <button id="btmbtn">See all plan details</button> -->
-        <div class="bottompara center">
-            <a href="" class=" bottompara_btn float_btn graphikWeb">See all plan details</a>
+        <br />
+        <br>
+        <hr width="100%"
+        size="1" color="black"
+        noshade>
+        <br />
+        <br>
+        <div id="socialNetwork">
+          <div class="footer-col">
+            <div>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </footer>
 
 
-    <!-- Gif Section 1 -->
 
-    <div id="GifSection1">
-        <div class="GifSection_Heading">
-            <h1 class="meansWeb">Generate up to 4x more orders* with Customer Journey Builder automations</h1>
-        </div>
-        <div class="GifSection_inner">
-            <div class="Gif_left">
-                <img src="/GIFs/1_1.gif" alt="">
-            </div>
-            <div class="Gif_right">
-                <h3 class="graphikWeb">
-                    Convert more customers at scale
-                </h3>
-                <p class="graphikWeb">
-                    Drive more traffic and sales by setting up automations that trigger emails based on customer behavior with our Customer Journey Builder.
-                </p>
-                <a href=""  class="graphikWeb">
-                    Learn more &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
-                </a>                
-            </div>
-        </div>
-        <div class="GifSection_inner">
-            <div class="Gif_left">
-                <img src="/GIFs/1_2.gif" alt="">
-            </div>
-            <div class="Gif_right">
-                <h3 class="graphikWeb">
-                    Discover new ways to automate
-                </h3>
-                <p class="graphikWeb">
-                    Get a head start with pre-built journeys that help you cross-sell your products, recover abandoned carts, re-engage existing customers, and win new ones.
-                </p>
-                <a href=""  class="graphikWeb">
-                    Learn more &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
-                </a>
-            </div>
-        </div>
-        <div class="GifSection_inner">
-            <div class="Gif_left">
-                <img src="/GIFs/1_3.gif" alt="">
-            </div>
-            <div class="Gif_right">
-                <h3 class="graphikWeb">
-                    Keep your emails relevant and your brand growing
-                </h3>
-                <p class="graphikWeb">
-                    Deliver personalized emails based on their buying behavior, survey responses, chat interactions, and support tickets to promote loyalty and growth.
-                </p>
-                <a href=""  class="graphikWeb">
-                    Learn more &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Keep customers ready Section 2 -->
-
-    <div id="KeepCustomersReady">
-        <div class="Keep_left">
-            <h2 class="meansWeb">Keep customers ready to buy with engaging content</h2>
-            <h4 class="graphikWeb">Content Optimizer</h4>
-            <p class="graphikWeb">Learn how your emails compare to the top-performing campaigns in your industry and get data-driven suggestions for improving your copy, imagery, and layout.</p>
-            <a href=""  class="graphikWeb">
-                Learn more &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
-            </a>            
-        </div>
-        <div class="Keep_right">
-            <img src="/Homepage_Images/mobile.png" alt="">
-        </div>
-    </div>
-
-    <!-- Gif Section 2 -->
-
-    <div id="GifSection2">
-        <div class="GifSection_Heading">
-            <h1 class="meansWeb">Get up to 88% more revenue* with our Customer Lifetime Value and Likelihood to Purchase segments</h1>
-        </div>
-        <div class="GifSection_inner">
-            <div class="Gif_left">
-                <img src="/GIFs/2_1.gif" alt="">
-            </div>
-            <div class="Gif_right">
-                <h3 class="graphikWeb">
-                    Most loyal and valuable customers
-                </h3>
-                <p class="graphikWeb">
-                    WMB will help you focus on your most loyal and valuable customers.
-                </p>
-                <a href=""  class="graphikWeb">
-                    Learn more &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
-                </a>
-            </div>
-        </div>
-        <div class="GifSection_inner">
-            <div class="Gif_left">
-                <img src="/GIFs/2_2.gif" alt="">
-            </div>
-            <div class="Gif_right">
-                <h3 class="graphikWeb">
-                    Predict who’s likely to buy again
-                </h3>
-                <p class="graphikWeb">
-                    Create segments of customers based on their lifetime value and likelihood to purchase.
-                </p>
-                <a href=""  class="graphikWeb">
-                    Learn more &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
-                </a>
-            </div>
-        </div>
-        <div class="GifSection_inner">
-            <div class="Gif_left">
-                <img src="/GIFs/2_3.gif" alt="">
-            </div>
-            <div class="Gif_right">
-                <h3 class="graphikWeb">
-                    Build customers for life
-                </h3>
-                <p class="graphikWeb">
-                    Use our intelligent predictions to tighten your targeting strategy, strengthen customer relationships, and drive repeat sales.
-                </p>
-                <a href=""  class="graphikWeb">
-                    Learn more &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- integrations Section -->
-
-    <div id="integrations">
-        <div class="integrations_Heading">
-            <h1 class="meansWeb">Bring in more data, drive more growth with our integrations</h1>
-        </div>
-        <div class="integrations_inner">
-            <div class="integrations_card">
-                <div class="integrations_card_left">
-                    <img src="https://eep.io/images/yzco4xsimv0y/egMxvwdsj41K5eESLhWBO/cf823adbd311e33919f97ffc5bf3181d/Canva.jpg?w=196&fm=webp&q=80" alt="">
-                </div>  
-                <div class="integrations_card_right">
-                    <h4 class="meansWeb">Canva</h4>
-                    <p class="graphikWeb">
-                        Create compelling visuals for your marketing.
-                    </p>
-                </div>     
-            </div>
-            <div class="integrations_card">
-                <div class="integrations_card_left">
-                    <img src="https://eep.io/images/yzco4xsimv0y/51oq4AakIqo8fATlHgqHK0/02a750b1c1a16745296dca6fa7cb830c/Salesforce__1_.jpg?w=196&fm=webp&q=80" alt="">
-                </div>  
-                <div class="integrations_card_right">
-                    <h4 class="meansWeb">WMB for Salesforce</h4>
-                    <p class="graphikWeb">
-                        Sync your WMB subscribers and Salesforce® leads across platforms.
-                    </p>
-                </div>     
-            </div>
-            <div class="integrations_card">
-                <div class="integrations_card_left">
-                    <img src="https://eep.io/images/yzco4xsimv0y/67trWJLKtKcvrqlKYSlskE/696ad499e0cc60aa7392521a6a7cfd90/Instagram__1_.jpg?w=196&fm=webp&q=80" alt="">
-                </div>  
-                <div class="integrations_card_right">
-                    <h4 class="meansWeb">Instagram</h4>
-                    <p class="graphikWeb">
-                        Promote and share your Instagram posts in email campaigns.
-                    </p>
-                </div>     
-            </div>
-            <div class="integrations_card">
-                <div class="integrations_card_left">
-                    <img src="https://eep.io/images/yzco4xsimv0y/44dW9Z4hibyDYi0qggfets/b01884985e996ffb5dc133556b92bb7a/Shopify__1_.jpg?w=196&fm=webp&q=80" alt="">
-                </div>  
-                <div class="integrations_card_right">
-                    <h4 class="meansWeb">Shopify</h4>
-                    <p class="graphikWeb">
-                        Sync Shopify customers, products, and purchase data to WMB.
-                    </p>
-                </div>     
-            </div>
-            <div class="integrations_card">
-                <div class="integrations_card_left">
-                    <img src="https://eep.io/images/yzco4xsimv0y/7mpZ7UZrdzk2BmWX1OnRvb/5e610ecd21eeb25d0b82b098ce424e34/Google_Analytics2.jpg?w=196&fm=webp&q=80" alt="">
-                </div>  
-                <div class="integrations_card_right">
-                    <h4 class="meansWeb">Google Analytics</h4>
-                    <p class="graphikWeb">
-                        Unlock powerful insights with campaign, website, or landing page data.
-                    </p>
-                </div>     
-            </div>
-            <div class="integrations_card">
-                <div class="integrations_card_left">
-                    <img src="https://eep.io/images/yzco4xsimv0y/2uruOq31Y1FKdghFWn5zMg/8a35f3f9e463ba34038f3c3f16ccb635/WooCommerce.jpg?w=196&fm=webp&q=80" alt="">
-                </div>  
-                <div class="integrations_card_right">
-                    <h4 class="meansWeb">WooCommerce</h4>
-                    <p class="graphikWeb">
-                        Power your ecommerce store with smart marketing features.
-                    </p>
-                </div>     
-            </div>
-            <div class="integrations_card">
-                <div class="integrations_card_left">
-                    <img src="https://eep.io/images/yzco4xsimv0y/uZVnrVt3DO1G4Ec5G4pvs/e6c9d3c2613827f7dd238f1c5e0b02d9/Quickbooks.jpg?w=196&fm=webp&q=80" alt="">
-                </div>  
-                <div class="integrations_card_right">
-                    <h4 class="meansWeb">QuickBooks Online</h4>
-                    <p class="graphikWeb">
-                        Bring together your marketing tools and invoice data.
-                    </p>
-                </div>     
-            </div>
-            <div class="integrations_card">
-                <div class="integrations_card_left">
-                    <img src="https://eep.io/images/yzco4xsimv0y/2klSrOoLZKmLuGKZjKT9o3/ca400f60c2f3673f3ab9b52f4d03360d/Squarespace.jpg?w=196&fm=webp&q=80" alt="">
-                </div>  
-                <div class="integrations_card_right">
-                    <h4 class="meansWeb">Squarespace Commerce</h4>
-                    <p class="graphikWeb">
-                        Market your ecommerce business and drive sales.
-                    </p>
-                </div>     
-            </div>
-            <div class="integrations_card">
-                <div class="integrations_card_left">
-                    <img src="https://eep.io/images/yzco4xsimv0y/26deBkGp3A5Pj7suZ9oV7V/858e8a4603707166988a3282bca7e29b/Zapier.jpg?w=196&fm=webp&q=80" alt="">
-                </div>  
-                <div class="integrations_card_right">
-                    <h4 class="meansWeb">Zapier</h4>
-                    <p class="graphikWeb">
-                        Automatically pass data between web services without 
-                    </p>
-                </div>     
-            </div>
-        </div>
-        <div class="integrations_button">
-            <a href=""  class="graphikWeb">
-                View all 300+ integrations &nbsp;<span><img src="/Homepage_Images/arrow.png"></span>
-            </a>  
-        </div>
-    </div>
-    
-    <!-- Disclaimers -->
-    <div id="disclaimers">
-        <ol class="graphikWeb"><span>*Disclaimers </span>  
-            <li>Mailchimp is the #1 email marketing and automation brand based on competitor brands' publicly available data on worldwide numbers of customers in 2021 / 2022.</li>
-            <li>Generate up to 4X more orders with Customer Journey Builder automations based on orders generated through user's connected stores with automations versus when they used bulk emails.</li>
-            <li>Get up to 88% more revenue based on emails sent with predicted segments against non-predictive segmented emails for users with connected stores only. Standard or Premium Plans only.<br>
-            Availability of features and functionality varies by plan type. For details, view plans and pricing.</li>
-        </ol>
-    </div>
-
-
-    <div style="height:100px;background-color:hotpink"></div>
 </body>
 </html>
+
+<script src="/header.js"></script>
+
+<script>
+
+ obj=JSON.parse(localStorage.getItem("login_user")) || {};
+  if(obj.name==undefined){
+    document.querySelector("#sign_out").style.display="none";
+    document.querySelector("#username").style.display="none";
+    document.querySelector("#star").style.display="none";    
+    document.querySelector("#TurnEmailsIntoRevenue #sign_up_top").style.display="inline block";
+    document.querySelector("#TurnEmailsIntoRevenue #buy_top").style.display="none"
+  }else{
+    if(obj.subscriber=="Subscribed"){
+        document.querySelector("#star").style.display="block";
+        document.querySelector("#TurnEmailsIntoRevenue #sign_up_top").style.display="none";
+        document.querySelector("#TurnEmailsIntoRevenue #buy_top").style.display="none";
+    }
+    else{           
+        document.querySelector("#star").style.display="none";
+        document.querySelector("#TurnEmailsIntoRevenue #sign_up_top").style.display="none";
+        document.querySelector("#TurnEmailsIntoRevenue #buy_top").style.display="inline block";
+    }
+    
+    document.querySelector("#login").style.display="none";
+    document.querySelector("#register").style.display="none";
+    document.querySelector("#username").style.display="block";
+    document.querySelector("#sign_out").style.display="block";
+    document.querySelector("#username").innerText="Hello, "+obj.name;
+  }
+  
+  sign_out=()=>{
+    obj={}
+    localStorage.setItem("login_user", JSON.stringify(obj));
+    window.location.assign("/index.html");
+  }
+
+</script>

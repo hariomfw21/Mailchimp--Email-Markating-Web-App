@@ -8,7 +8,7 @@
     padding-top: 80px;
     padding-bottom: 80px;
     width: 100%;
-    background-color: #fbeeca;
+    /* background-color: #fbeeca; */
 }
 
 .cstop>#csbox {
@@ -125,7 +125,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: #ffe01b;
+    background-color: #E7B75F;
     padding-top: 10px;
     padding-bottom: 10px;
 }

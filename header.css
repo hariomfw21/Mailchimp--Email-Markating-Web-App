@@ -1,8 +1,44 @@
+.float_btn{
+    display: inline-block;
+    font-size:14px;
+    color: black;
+    padding: 14px 24px;
+    border-radius: 35px;
+    border: none;
+    border:1px solid black;
+    margin-top: 20px;
+    transform: translateY(0);
+    position: relative;
+    text-decoration: none;
+}
+.float_btn:hover{
+    box-shadow: 0px 5px 0px -1px rgba(0,0,0,1);
+    transform: translate(0px, -5px);            
+    /* transition: all ease-in-out 200ms; */
+    transition: transform .3s cubic-bezier(.5,2.5,.7,.7),box-shadow .3s cubic-bezier(.5,2.5,.7,.7),-webkit-transform .3s cubic-bezier(.5,2.5,.7,.7),-webkit-box-shadow .3s cubic-bezier(.5,2.5,.7,.7);
+}
+
+#Header #sign_out{
+    display: none ;
+    display: inline-block;
+    width: 50%;
+}
+
 #Header{
     /* border: 1px solid red; */
     height: auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    z-index: 999;
+    background-color: white;
+}
+
+#mySidenav{
+    z-index: 999;
+}
+
+#myinnerreside-nav{
+    z-index: 999;
 }
 
 
@@ -158,13 +194,15 @@
     background-color: #f6f6f4;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 20px;
+    padding-top: 20px;    
+    /* padding-left: 40px; */
 }
 
 .ullist-innernev {
     list-style-type: none;
     padding-top: 5.2rem;
     padding-right: 20px;
+    padding-left: 40px;
 }
 
 .innernevAnc {

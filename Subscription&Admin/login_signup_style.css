@@ -40,7 +40,7 @@ form input{
     margin-top: 10px;
     margin-bottom: 20px;
     border: 1px solid gainsboro;
-    width: 85%;
+    width: 90%;
 }
 form input:focus{
     border: 1px solid grey;
