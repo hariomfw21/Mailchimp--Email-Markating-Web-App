@@ -18,7 +18,12 @@ signUpBtn.addEventListener("submit",((e)=>{
     let obj={
         email,
         username,
-        password
+        password,        
+        is_subscribed:"Not Subscribed",
+        plan:"Not Subscribed",
+        price:"Not Subscribed",
+        time:"Not Subscribed",
+        subscription_period:"Not Subscribed"
     }
     
     if(password.length<6){

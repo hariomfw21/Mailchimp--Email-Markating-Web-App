@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="login_signup_style.css">
+<body>
+
+
+    <form action="">
+        <h2>Admin Sign In</h2>
+        
+        <label for="">Admin Email</label>
+        <input type="email" name="" id="email" placeholder="Enter Admin Email">
+        <label for="">Admin Password</label>
+        <input type="password" name="" id="pass" placeholder="Enter Admin Password">
+        <i onclick="show_hide()" class="fa-solid fa-eye" id="eye"></i>
+        <!-- <input onclick="show_hide()" type="button" value="Show/Hide"> -->
+        
+        <input type="submit" value="ADMIN SIGN IN">
+        <h3>Go to user login? <a href="login.html">Sign In</a></h3>
+    </form>
+    
+   
+    </body>
+</html>
+<script>
+
+form=document.querySelector("form");
+form.addEventListener("submit", function(){
+    event.preventDefault();
+    let entered_pass= form.pass.value;
+    let entered_email= form.email.value;
+
+    if(entered_pass == "" || entered_email == ""){
+        alert("Please enter Email and Password both.");
+    }
+    else if(entered_pass !== "admin" && entered_email !== "admin@gmail.com"){
+        alert("Details does not match");
+    }
+    else if(entered_pass == "admin" && entered_email !== "admin@gmail.com"){
+        alert("Email does not match");
+    }
+    else if(entered_pass !== "admin" && entered_email == "admin@gmail.com"){
+        alert("Password does not match");
+    }
+    else if(entered_pass == "admin" && entered_email == "admin@gmail.com"){
+        alert("Login Sucessful");        
+        window.location.href = "/admin.html";
+    }
+ 
+    
+});
+
+show_hide=()=>{
+    let x=document.querySelector("#pass");
+    x.type==="password" ? x.type="text" : x.type="password";
+    
+}
+</script>
