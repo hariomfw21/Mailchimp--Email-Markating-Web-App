@@ -28,7 +28,7 @@ signUpBtn.addEventListener("submit",((e)=>{
     }
     
     if(password.length<=6){
-       alert("Password length should be more than 5 characters")
+       alert("Password length should be more than 5 characters.")
     }
     else if(email && username && password){
        Credentials.push(obj);
