@@ -27,7 +27,7 @@ signUpBtn.addEventListener("submit",((e)=>{
         subscription_period:"Not Subscribed"
     }
     
-    if(password.length<6){
+    if(password.length<=6){
        alert("Password length should be more than 5 characters")
     }
     else if(email && username && password){
