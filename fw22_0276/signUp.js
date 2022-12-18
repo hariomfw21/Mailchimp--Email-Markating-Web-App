@@ -1,11 +1,12 @@
 
 let signUpBtn=document.getElementById("form");
 let Credentials=JSON.parse(localStorage.getItem("UserData")) || [];
+
 signUpBtn.addEventListener("submit",((e)=>{
     e.preventDefault();
 
     let email=document.getElementById("email").value;
-    let username=document.getElementById("username").value;
+    let username=document.getElementById("user_name").value;
     let password=document.getElementById("password").value;
     
     for(let i=0; i<=Credentials.length-1; i++){
