@@ -1,0 +1,150 @@
+
+body{
+    background-image: url(https://sso.masaischool.com/screenbg.svg),url(https://sso.masaischool.com/screenbg-bottom.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 0 0 100% 100%;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-break: loose;
+    
+    letter-spacing: 0.05em; 
+}
+#form_grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+form{
+    /* width: 28%; */
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 14px;
+    margin-bottom: 50px;    
+    margin-top: 50px;
+}
+form h2,form h3,form h5{
+    text-align: center;
+    margin-bottom: 20px;
+}
+form input{
+    padding:12px;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid gainsboro;
+    width: 85%;
+}
+form input:focus{
+    border: 1px solid grey;
+}
+form input[type="submit"]{
+    background-color: #2563eb;
+    color: white;
+    width: 97%;
+}
+form span{
+    display: flex;
+    justify-content: space-between;
+}
+form span label:last-child{
+    color: #2563eb;
+}
+form button{
+    display: flex;
+    padding: 8px 60px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid gainsboro;
+    background-color: white;
+    margin-bottom: 40px;
+}
+form .fa-solid{
+    position: absolute;
+    top: 327px;
+    left: 831px;
+    color: lightgrey;
+} 
+form h1{
+  font-size: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form h1 span{
+  color:#2563eb;
+}
+form h1 span.blue{
+  font-size: 65px;
+}
+table{
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  border-collapse: collapse;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+thead tr{
+  background-color: #FED54E;
+}
+th{
+  font-size: 14px;
+}
+td{
+  font-size: 13px;
+}
+td.green{
+  color:green;
+  font-weight: 900;
+}
+td.red{
+  color:red;
+  font-weight: 900;
+}
+th,td{
+  padding: 8px 5px;
+}
+tr{
+  border-bottom: 1px solid lightgray;
+}
+th{
+  border: 1px solid rgb(255, 255, 255);
+}
+form select{
+  margin: auto;
+  width:20%;
+}
+
+#footer{
+  width: 95%;
+  margin: auto;
+  padding-top: 20px;
+}
+#footer p{
+  font-size: 12px;
+  color: grey;
+  padding: 5px;
+}
+.footer_a{
+  display: flex;
+}
+.footer_a a{
+  text-decoration: none;
+  font-size: 12px;
+  color: grey;
+  padding: 5px;
+}
+.footer_a a:not(:last-child){
+  border-right: 1.5px solid lightgrey;
+}

@@ -15,9 +15,13 @@ console.log(email,password);
 let flag_email=false;
 let flag_pass=false;
 
+let userLog,is_subscribed;
+
 for(let i=0; i<=userData.length-1; i++){
     if(userData[i].email==email){
         flag_email=true;
+        userLog=userData[i].username;
+        is_subscribed=userData[i].is_subscribed;
         
     }
     if(userData[i].password==password){
@@ -27,7 +31,17 @@ for(let i=0; i<=userData.length-1; i++){
 console.log(flag_pass)
 
 if(flag_email && flag_pass){
+    
+
+    obj={
+        name:userLog,
+        loged_in:true,
+        subscriber:is_subscribed
+    }
+    localStorage.setItem("login_user", JSON.stringify(obj));
+
     Popup();
+    window.location.href = "/index.html";
 }
 else if(flag_email && flag_pass==false){
     alert("Incorrect Password");

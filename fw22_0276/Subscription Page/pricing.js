@@ -71,3 +71,32 @@ selected_tag.addEventListener("change",function(){
         get_essential_value.textContent=essential_pack;
     }
 })
+
+// let buy_buttons=document.querySelectorAll(".float_btn");
+// for(let buy_button of buy_buttons){
+//     buy_button.addEventListener("click",()=>{
+//         let data
+//     })
+// }
+
+localStorage.setItem("Price",0);
+localStorage.setItem("Plan","Free Plan");
+
+function getPriceStandard(){
+    let standard_value=document.getElementById("standard_value").innerText;
+    localStorage.setItem("Price",standard_value);
+    localStorage.setItem("Plan","Standard Plan");
+    window.location.assign("/Subscription&Admin/subscription.html");
+}
+function getPricePremium(){
+    let premium_value=document.getElementById("premium_value").innerText;
+    localStorage.setItem("Price",premium_value);
+    localStorage.setItem("Plan","Premium Plan");   
+    window.location.assign("/Subscription&Admin/subscription.html");
+}
+function getPriceEssentials(){
+    let essential_value=document.getElementById("essential_value").innerText;
+    localStorage.setItem("Price",essential_value);
+    localStorage.setItem("Plan","Essentials Plan");
+    window.location.href="/Subscription&Admin/subscription.html";
+}
