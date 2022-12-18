@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/header.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="/footer.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <!-- <link rel="shortcut icon" href="/fw22_0276/Green Bird Creative Business Logo Design.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="/fw22_0276/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="./crm.css">
+    <title>C.R.M</title>
+    <style>
+        /* PlanBox Section */
+        .center {
+            text-align: center;
+        }
+        #planbox ul  li> span:before { content:"\2713\0020"; }
+        #planbox ul  li> span.na:before {
+             /* content: none !important;  */
+             content: "\274c\0020"!important; 
+        }
+        #planbox > h2 {
+            text-align: center;
+            padding-bottom: 40px;
+            padding-top: 10px;
+            font-weight: 300;
+            font-size: 45px;
+        }
+        #planbox .typeOfMemberShip h3 {
+            font-weight: 400;
+            font-size: 20px;
+        }
+        #planbox {
+            padding: 80px 70px;
+            background-color: #f6f6f4;
+            padding-bottom: 5rem;
+            letter-spacing: 0.02em;
+        }
+        #plancards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* margin-bottom: 500px; */
+            background-color: white;
+        }
+
+        .card {
+            padding: 15px 18px 15px 18px;
+            font-size: 1em;
+            color: rgba(36, 28, 21, 0.65);
+            color: #403b3b;
+            border: 1px #cfd8dc solid;
+        }
+        .typeOfMemberShip {
+            padding: 10px 0px;
+        }
+        .membershipPara {
+            font-size: 13px;
+            margin-bottom: 10px;
+            color: rgba(36, 28, 21, 0.65);
+        }
+        .membershipPara ~ p {
+            color: rgba(36, 28, 21, 0.65);
+            font-size: 13px;
+        }
+
+        .price {
+            font-size: 30px;
+            font-weight: 400;
+        }
+        #planbox ul {
+            list-style: none;
+            margin: 15px;
+        }
+        #planbox ul > li span {
+            border-bottom: 1px #403b3b dashed;
+            text-align: justify;
+            font-size: 13px;
+        }
+        #planbox .card ul > li {
+            border-bottom: 1px #cfd8dc solid;
+            margin-bottom: 20px;
+            height: 25px;
+            padding-bottom: 25px;
+            /* border: 1px solid;   */
+        }
+        #planbox .card sup {
+            font-size: 10px;
+        }
+        #planbox .na {
+            color: rgba(36, 28, 21, 0.3);
+        }
+        #noborder {
+            border-bottom: 0px;
+        }
+        #noborder1 {
+            border-bottom: 0px;
+        }
+        #noborder3 {
+            border-bottom: 0px;
+        }
+        #noborder4 {
+            border-bottom: 0px;
+        }
+        #bottompara {
+            /* border: 1px solid; */
+            box-sizing: border-box;
+            font-size: 13px;
+            text-align: center;
+            margin-top: 20px;
+            color: #94a0a5;
+        }
+        #bottompara span {
+            color: #565c5f;
+        }
+        #btmbtn {
+            display: block;
+            margin: auto;
+            margin-top: 25px;
+            padding: 15px 20px;
+            border-radius: 500px;
+            background-color: #ffe01b;
+        }
+        #learnmore {
+            border-bottom: 1px dotted;
+            color: #94a0a5;
+        }
+        #navbtn a {
+            text-decoration: none;
+            color: #403b3b;
+        }
+        #plansBottomHeader {
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 3 00;
+            padding: 0px 500px;
+        }
+        #plancards .card:hover{
+            box-shadow: 0 0 0.625rem -0.125rem hsl(0deg 0% 55% / 75%);
+            cursor: pointer;
+        }
+        
+        .bottompara_btn{
+            margin-top: 40px;
+            background-color: #ffe01b;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header  Import -->
+    <div id="Header">
+        <div class="nev-bar">
+            <button onmouseover="openNav()" class="nev-barAncer">Product</button>
+            <button onmouseover="openNavRes()" class="nev-barAncer">
+                Resource
+            </button>
+            <button onmouseover="openNavIns()" class="nev-barAncer">
+                Inspration
+            </button>
+            <button  onclick='window.location.href="/fw22_0276/Subscription Page/pricing.html"'  onmouseover="openNavPri()" class="nev-barAncer">Pricing</button>
+        </div>
+        <!-- <div class="nev-bar">
+            <img src="/pics and logo/Green_Bird_Creative_Business_Logo_Design-removebg-preview (1).png" alt="logo" />
+            <h2>WMB</h2>
+        </div> -->
+        <div onclick='window.location.href="/index.html"'  class="nev-bar">
+            <img style="cursor: pointer;" src="/pics and logo/Green_Bird_Creative_Business_Logo_Design-removebg-preview (1).png" alt="logo" />
+            <h2 style="cursor: pointer;" >WMB</h2>
+        </div>
+
+        <div class="nev-bar">
+            <div>
+                <p></p>&nbsp;&nbsp;Sales:+1 (800) 315-5939</p>
+            </div>
+            <div class="icon-nav">
+                <i style="padding-left: 0px;" class="material-icons">search</i>
+                <i style="padding-left: 0px;" class="material-icons">delete</i>                
+                <img id="star" style="padding-left: 10px;" width="40px" src="/Homepage_Images/star.png" alt="user">
+            </div>
+
+            <!-- Nev-bar login sign up button -->
+
+            <div>
+                <a id="login" href="/fw22_0276/login.html" style="margin-top:0px; padding:4px 8px; background-color: #FFE01B;" class="float_btn graphikWeb">Log In</a>
+                <a id="register" href="/fw22_0276/signUp.html" style="margin-top:0px; padding:4px 8px; background-color: #FFE01B;" class="float_btn graphikWeb">Sign Up</a>
+                
+                <h5 id="username"></h5>                
+                <a  id="sign_out" href="/index.html" onclick="sign_out()" style="margin-top:5px; padding:4px 8px; display: none; display: inline-block;background-color: #FFE01B;" class="float_btn graphikWeb">Log Out</a>
+                
+            </div>
+        </div>
+    </div>
+    <div></div>
+
+    <!--  side nav -->
+
+    <div id="mySidenav" class="sidenav" >
+        <div class="nev-bar">
+            <button onmouseover="openNav()" class="nev-barAncer">Product</button>
+            <button onmouseover="openNavRes()" class="nev-barAncer">
+                Resource
+            </button>
+            <button onmouseover="openNavIns()" class="nev-barAncer">
+                Inspration
+            </button>
+            <button onclick='window.location.href="/fw22_0276/Subscription Page/pricing.html"' onmouseover="openNavPri()" class="nev-barAncer">Pricing</button>
+        </div>
+        <br />
+        <div id="resource-nav">
+            <!-- code in script -->
+            <!-- code in script -->
+            <!-- code in script -->
+            <!-- code in script -->
+        </div>
+    </div>
+    <!-- side nav ^^^^ -->
+    <div id="myinnerreside-nav" class="innerside-nav" onmouseleave="closeInnerNav(),closeNav()">
+        <div id="innerresorce-nav">
+            <ul class="ullist-innernev">
+                <li>
+                    <!-- <a class="innernevAnc" href="#">Website</a> -->
+                    <a class="innernevAnc" href="/MarketingCRM/MarketingCRM.html">Marketing CRM</a>
+                    <p class="innernavp">
+                        Create a free website that comes with built-in markating tool
+                    </p>
+                </li>
+
+                <br />
+
+                <li>
+                    <!-- <a class="innernevAnc" href="#">Online Store</a> -->
+                    <a class="innernevAnc" href="/contentStudio/contentStudio.html">Content Studio</a>
+                    <p class="innernavp">
+                        Get beautiful onbrand design made for you with the power Of AI
+                    </p>
+                </li>
+
+                <br />
+
+                <li>
+                    <a class="innernevAnc" href="#">Dynamic Content</a>
+                    <p class="innernavp">
+                        Pretionlise Individual content Block with You Emails.
+                    </p>
+                </li>
+
+                <br />
+
+                <li>
+                    <a class="innernevAnc" href="#">Subject Line Helper</a>
+                    <p class="innernavp">
+                        Get real-time feedback on how to refine your subject lines.
+                    </p>
+                </li>
+
+                <br />
+
+                <li>
+                    <a class="innernevAnc" href="#">Campaign Templates</a>
+                    <p class="innernavp">
+                        100+ pre-designed email and landing page templates that fit any
+                        message.
+                    </p>
+                </li>
+
+                <br />
+
+                <hr />
+            </ul>
+        </div>
+    </div>
+
+    <!-- Header  End -->
+       
+    <div class="mktop">
+        <div id="mkinbox">
+            <div id="mkin1">
+                <h1>MARKETING CRM SOFTWARE FOR SMALL BUSINESSES</h1>
+                <h2>Build better relationships with your customers</h2>
+                <p>Get to know your audience and find new ways to market to them when you use Mailchimp for customer
+                    relationship management (CRM).</p>
+                <a href="/fw22_0276/Subscription Page/pricing.html" onclick="seemore()">Pick a plan</a>
+            </div>
+            <div id="mkin2">
+                <img src="https://eep.io/images/yzco4xsimv0y/58dRPnuiMzNAnLvlazlYax/43bbcc460d5e7fa2ae19eb6274743ab0/CRM_Hero.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <div class="mkmid">
+        <div id="midbox1">
+            <h2>CRM marketing software that scales as you do</h2>
+            <p>Customer relationship management isn't just a marketing solution for big businesses. Create stronger
+                connections with your customers from day 1 with our Marketing CRM tools, and find everything you need to
+                have relevant conversations with your people—whether you're building a brand new audience or you have
+                thousands of contacts already.</p>
+        </div>
+        <div id="midbox2">
+            <div id="midinbox1">
+                <!-- <p>01</p> -->
+                <img style="width: 120%;" src="https://eep.io/images/yzco4xsimv0y/JZKGbHPIfqnjWZo0aKEYb/86194eb4ab230cbe688ebe86f21f1824/CRM_HorizGrid_1.png?w=544&fm=webp&q=80"/>
+                <h3>Connect all your contact data</h3>
+                <p>To make contact management easy, use our CRM solution with ready-made segments.</p>
+            </div>
+            <div id="midinbox1">
+                <img style="width: 120%;" src="https://eep.io/images/yzco4xsimv0y/3zIMIolWcRfK6ztc46V29t/43eb11335e213df1bed4ec5ba155e318/CRM_HorizGrid_2.png?w=544&fm=webp&q=80"/>
+                <h3>Organize what you know</h3>
+                <p>Create your own segments and tags to filter audience data however you need to.</p>
+            </div>
+            <div id="midinbox1">
+                <img style="width: 120%;" src="https://eep.io/images/yzco4xsimv0y/5EjvedjtQ1EaKEArzg0rqO/d50a9608f8c6cf5f6daeee55e5d4a570/CRM_HorizGrid_3.png?w=544&fm=webp&q=80"/>
+                <h3>Understand patterns in your data</h3>
+                <p>Get to know your target customers at a glance with your audience dashboard.</p>
+            </div>
+            <div id="midinbox1">
+                <img style="width: 120%;" src="https://eep.io/images/yzco4xsimv0y/1HQNBU9GCGWxLzAD2MlDTN/2e229864b0cbdbc86d45ebaa62978e7f/CRM_HorizGrid_4.png?w=544&fm=webp&q=80"/>
+                <h3>Turn audience insights into action</h3>
+                <p>Set up automated messages to trigger based on specific segments or tags.</p>
+            </div>
+        </div>
+        <div id="midbox3">
+            <div id="midinbox1">
+             
+            <iframe src="https://www.youtube.com/embed/qxL4pqyYxl0" title="UrbanSitter: Managing 2 Types of Users at Once" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+            <div id="midinbox2">
+                <blockquote>See how Mailchimp's all-in-one Marketing Platform helps you market smarter.</blockquote>
+            </div>
+        </div>
+        <div id="midbox4">
+            <div id="midinbox1">
+                <h2>Understand customer data and act on it—all in one dashboard</h2>
+                <p>Our audience dashboard shows you pre-built segments like top locations, recent sources of growth, common tags, and even customer lifetime value (CLV).</p>
+                <a href="https://mailchimp.com/features/audience-dashboard/">See how it works</a>
+            </div>
+            <div id="midinbox2"><img src="https://eep.io/images/yzco4xsimv0y/517X9c5oBkDYjniDIbq4Mc/76dfa4dd158e663dbef839423d1cd64f/81_Audience-Management_AUI.png?w=760&fm=webp&q=80" alt=""></div>
+        </div>
+
+
+        
+           <!--   Plan Section 1 -->
+        
+           <div id="planbox">
+            <h2 class="meansWeb">Find the right plan</h2>
+            <div id="plancards">
+            <div class="card">
+                <h3 class="typeOfMemberShip meansWeb">Premium</h3>
+                <p class="membershipPara graphikWeb">
+                Our most advanced tools, unlimited contacts, and priority support;
+                built for teams.
+                </p>
+                <p class="graphikWeb">Starts at</p>
+                <h3 class="price meansWeb"><sup>₹</sup>23,000</h3>
+                <p class="graphikWeb">/month based on 10,000 contacts*</p>
+    
+                <div class="ul graphikWeb">
+                <ul>
+                    <li>
+                    <span>Phone & Priority Support</span>
+                    </li>
+                    <li>
+                    <span>Custom-Coded and Pre-built Email Templates</span>
+                    </li>
+                    <li>
+                    <span>Multivariate and A/B Testing</span>
+                    </li>
+                    <li>
+                    <span>Enhanced Automated Customer Journeys</span>
+                    </li>
+                    <li>
+                    <span> Predictive Segmentation </span>
+                    </li>
+                    <li id="noborder">
+                    <span>Assisted Onboarding</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="typeOfMemberShip meansWeb">Standard</h3>
+                <p class="membershipPara graphikWeb">
+                Sell even more with personalization, optimization tools, and
+                automations.
+                </p>
+                <p class="graphikWeb">Starts at</p>
+                <h3 class="price meansWeb"><sup>₹</sup>1,150</h3>
+                <p class="graphikWeb">/month based on 500 contacts*</p>
+    
+                <div class="ul graphikWeb">
+                <ul>
+                    <li>
+                    <span>24/7 Email & Chat Support</span>
+                    </li>
+                    <li>
+                    <span>Custom-Coded and Pre-built Email Templates</span>
+                    </li>
+                    <li>
+                    <span>Multivariate and A/B Testing</span>
+                    </li>
+                    <li>
+                    <span>Enhanced Automated Customer Journeys</span>
+                    </li>
+                    <li>
+                    <span> Predictive Segmentation </span>
+                    </li>
+                    <li id="noborder1">
+                    
+                    <span class="na">Assisted Onboarding</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="typeOfMemberShip meansWeb">Essentials</h3>
+                <p class="membershipPara graphikWeb">
+                Send the right content at the right time with testing and scheduling
+                features.
+                </p>
+                <p class="graphikWeb">Starts at</p>
+                <h3 class="price meansWeb"><sup>₹</sup>770</h3>
+                <p class="graphikWeb">/month based on 500 contacts*</p>
+    
+                <div class="ul graphikWeb">
+                <ul>
+                    <li>
+                    <span>24/7 Email & Chat Support</span>
+                    </li>
+                    <li>
+                    <span>Pre-built Email Templates</span>
+                    </li>
+                    <li><span>A/B Testing</span></li>
+                    <li>
+                    <span>Basic Automated Customer Journeys</span>
+                    </li>
+                    <li>
+                    
+                    <span class="na"> Predictive Segmentation </span>
+                    </li>
+                    <li id="noborder3">
+                    
+                    <span class="na">Assisted Onboarding</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="typeOfMemberShip meansWeb">Free</h3>
+                <p class="membershipPara graphikWeb">
+                Easily create email campaigns and learn more about your customers.
+                </p>
+                <p class="graphikWeb">Starts at</p>
+                <h3 class="price meansWeb"><sup>₹</sup>0</h3>
+                <p class="graphikWeb">/month based on 500 contacts*</p>
+    
+                <div class="ul graphikWeb">
+                <ul>
+                    <li>
+                    <span>Email support for first 30 days</span>
+                    </li>
+                    <li>
+                    <span>Pre-built Email Templates</span>
+                    </li>
+                    <li>
+                    
+                    <span class="na">A/B Testing</span>
+                    </li>
+                    <li>
+                    
+                    <span class="na">Basic Automated Customer Journeys</span>
+                    </li>
+                    <li>
+                    
+                    <span class="na"> Predictive Segmentation </span>
+                    </li>
+                    <li id="noborder3">
+                    </i
+                    ><span class="na">Assisted Onboarding</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <p id="bottompara" class="graphikWeb">
+            <span> <u>*Overrages</u></span> apply if contact or email send limit is
+            exceeded. Free plan sending will be paused if contact or email send
+            limit is exceeded. <span id="learnmore">Learn more</span>
+            </p>
+            <!-- <button id="btmbtn">See all plan details</button> -->
+            <div class="bottompara center">
+                <a href="/fw22_0276/Subscription Page/pricing.html" class=" bottompara_btn float_btn graphikWeb">See all plan details</a>
+            </div>
+        </div>
+
+
+        <!-- <div id="bigbox">
+            <h1>Find the right plan</h1>
+            <div id="plan">
+                <div id="box1">
+                    <h3>Premium</h3>
+                    <h6>Our most advanced tools, unlimited contacts, and priority support; built for teams.</h8>
+                    <h1>₹23,000</h1>
+                    <p>1. Phone & Priority Support</p>
+                    <p>2. Custom-Coded and Pre-built Email Templates</p>
+                    <p>3. Multivariate and A/B Testing</p>
+                    <p>4. Enhanced Automated Customer Journeys</p>
+                    <p>5. Predictive Segmentation</p>
+                    <p>6. Assisted Onboarding</p> 
+                </div>
+    
+                <div id="box1">
+                    <h3>Standard</h3>
+                    <h6>Sell even more with personalization, optimization tools, and enhanced automations.</h8>
+                    <h1>₹1,150</h1>
+                    <p>1. 24/7 Email & Chat Support</p>
+                    <p>2. Custom-Coded and Pre-built Email Templates</p>
+                    <p>3. A/B Testing</p>
+                    <p>4. Enhanced Automated Customer Journeys</p>
+                    <p>5. Predictive Segmentation</p>
+                </div>
+    
+                <div id="box1">
+                    <h3>Essentials</h3>
+                    <h6>Send the right content at the right time with testing and scheduling features.</h8>
+                    <h1>₹770</h1>
+                    <p>1. 24/7 Email & Chat Support</p>
+                    <p>2. Pre-built Email Templates</p>
+                    <p>3. A/B Testing</p>
+                    <p>4. Basic Automated Customer Journeys</p>
+                     
+                </div>
+                <div id="box1">
+                    <h3>Free</h3>
+                    <h6>Easily create email campaigns and learn more about your customers.</h8>
+                    <h1>₹0</h1>
+                    <p>1. Email support for first 30 days</p>
+                    <p>2. Pre-built Email Templates</p>
+                </div>
+            </div>
+            <button id="more" onclick='window.location.href="/fw22_0276/Subscription Page/pricing.html"' >See more</button>
+            <button id="more" onclick="seemore()">See more</button>
+        </div> -->
+
+        <div id="midbox5">
+            <h2>CRM Benefits</h2>
+                <div id="inbox1">
+                    <div id="box1">
+                        <img src="https://eep.io/images/yzco4xsimv0y/4Lebg3HwR5UOhso8Iwi0pr/2daba4f167ae0d97517085ade56f1e0f/CRM_StackHigh_1.png?fm=webp&q=80" alt="">
+                    </div>
+                    <div id="box2">
+                        <span>Get a holistic view of your audience</span>
+                        <p>Whether youre starting from scratch with CRM software or bringing an existing audience into Mailchimp, connecting your favorite tools and keeping all your contact data in Mailchimp's marketing CRM tool helps you stay organized and improve your marketing. Best of all, our audience dashboard will help you get to know your audience at a glance, visually showing you segments within your audience data that you can send targeted campaigns to with just a few clicks.</p>
+                    </div> 
+                </div>
+                <hr>
+                <div id="inbox1">
+                    <div id="box1">
+                        <img src="https://eep.io/images/yzco4xsimv0y/7m92YedyRGtl9X1JrjcoGt/27aa28119d209e4e6011da79684f04ac/CRM_StackHigh_2.png?fm=webp&q=80" alt="">
+                    </div>
+                    <div id="box2">
+                        <span>Organize your contacts however you need to</span>
+                        <p>With all your contact data in one place, it's easy to use Mailchimp’s segmentation tools to find exactly who you need to talk to. Segments, tags, and groups work in slightly different ways to help you create your own organizational structure and keep track of everything you learn about contacts as you grow.</p>
+                    </div> 
+                </div>
+                <hr>
+                <div id="inbox1">
+                    <div id="box1">
+                        <img src="https://eep.io/images/yzco4xsimv0y/5pX3KFa50dWsdX6I3STdid/92d7eed044c0a2754d173d83ae5fa3e5/CRM_StackHigh_3.png?fm=webp&q=80" alt="">
+                    </div>
+                    <div id="box2">
+                        <span>Get insights about how to talk to your audience</span>
+                        <p>Mailchimp makes it easy to gain insights about your audience—from a bird's eye view or at an individual level. Our growth, engagement, and revenue reports will help you discover patterns in audience behavior and see what’s working with your marketing. Contact profiles let you meet the people behind the numbers, so you can dive in and see what actions have led to a purchase, leave notes about individual preferences, and more.</p>
+                    </div> 
+                </div>
+                <hr>
+                <div id="inbox1">
+                    <div id="box1">
+                        <img src="https://eep.io/images/yzco4xsimv0y/3SqbL6RKCLBPHv0MOeO9tm/100824642d3835b5937b07273af2d2fc/CRM_StackHigh_4.png?fm=webp&q=80" alt="">
+                    </div>
+                    <div id="box2">
+                        <span>Build a personalized experience for every customer</span>
+                        <p>With all your contact data organized in the Mailchimp CRM, you can start using those insights to make sure your marketing speaks to individual customers across marketing channels. Use Mailchimp’s behavioral targeting and personalization tools to make campaigns feel like a 1-on-1 conversation in real time—sending the right message at the right moment, and always making the right personalized product recommendations.</p>
+                    </div> 
+                </div>
+        </div>
+        <div id="midbox6">
+            <div id="midinbox1">
+                <h2>Stay connected with Mailchimp's mobile app</h2>
+                <p>Never miss an opportunity to collect and organize new contacts wherever you meet them—at an event or in your store.</p>
+                <p>Use our marketing CRM software on the go. Track your audience activity or explore the contact profile for an individual view. Add tags, track engagement, or reach out to contacts directly via email, text, or call.</p>
+                <a href="https://mailchimp.com/features/mailchimp-mobile/">Learn more</a>
+            </div>
+            <div id="midinbox2">
+                <img src="https://eep.io/images/yzco4xsimv0y/6zhkm1ck61MBaSfuigIIK9/4a53cb2e79f59f8641508dc63e4155d4/CRM_FlexHigh_1.png?w=842&fm=webp&q=80" alt="">
+            </div>
+        </div>
+        <div id="midbox6">
+            <div id="midinbox2">
+                <img src="https://eep.io/images/yzco4xsimv0y/1hkFznrOH66ryorQp46fLv/6a76728340f9e69c15d4e7fcaa200ef1/CRM_FlexHigh_2.png?w=842&fm=webp&q=80" alt="">
+            </div>
+            <div id="midinbox1">
+                <h2>How to manage your audience in Mailchimp's Contact Management System</h2>
+                <p>See how our Marketing CRM tools help you get a clearer picture of who your audience is and how to keep them engaged.</p>
+                <a href="https://mailchimp.com/resources/manage-your-audience/">Read the article</a>
+            </div>
+        </div>
+       
+    </div>
+    <div class="lsbox1">
+        <div id="lsinbox1">
+            <h2>Start using audience data to improve your marketing</h2>
+            <p>Mailchimp gives you the tools you need to build better customer relationships at scale.</p>
+            <a href="/fw22_0276/signUp.html" onclick="sign()" id="sign">Sign Up</a>
+        </div>
+    </div>
+    <div class="lsbox2">
+        <div id="ls1">
+            <h2>See more ways to get targeted with your marketing</h2>
+        </div>
+        <div id="ls2">
+            <div id="lsinbox1"><img
+                    src="https://eep.io/images/yzco4xsimv0y/6kdJ3uKUolitlvriKjoQZ6/9fe9d149cb039e8fbf556942b62a6303/Segmenting101-recirc.gif?w=540&fm=webp&q=80"
+                    alt="">
+                <p>PRODUCT ADVICE</p>
+                <a >
+              
+                Targeting 101: A Beginner's Guide to Segmentation</a>
+                <p>The hardest thing about 'segmentation' is the term itself—learn how to get started.</p>
+            </div>
+            <div id="lsinbox1"><img
+                    src="https://eep.io/images/yzco4xsimv0y/3Ur1VQoZrFbzuizlYA2yt0/8ead5b92d1792c5541280e2c345dc70f/ILLO_Thumbnail_Instagram_Ads_1_1520x852.png?w=540&fm=webp&q=80"
+                    alt="">
+                <p>BUSINESS TIPS</p>
+                <a >
+               
+                    Keep, Archive, or Delete? Top Tips for Managing Your Contacts</a>
+                <p>3 ways to make sure you're getting the most value from an audience you've worked hard to build.
+                </p>
+            </div>
+            <div id="lsinbox1"><img
+                    src="https://eep.io/images/yzco4xsimv0y/5M2jPA8RDaG8KqyqKscGwq/a8c4c1d73ea9740b6c6a9043ce2b618a/Tentpole-CRM.Article-Thumbnail_1520x855.jpg?w=540&fm=webp&q=80"
+                    alt="">
+                <p>BUSINESS TIPS</p>
+                <a >
+                  
+                        4 Simple Steps to Turn Customer Data into Targeted Campaigns That Sell More Stuff</a> 
+                <p>How to use customer data—from email engagement to purchase history—to send more targeted campaigns in Mailchimp.
+                </p>
+            </div>
+
+        </div>
+    </div>
+   
+
+     <!-- Footer -->
+     <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Product</h4>
+              <ul>
+                <li><a href="#">why mailchamp?</a></li>
+                <li><a href="#">Product-Markating</a></li>
+                <li><a href="#">Email-Markating</a></li>
+                <li><a href="#">How we compair</a></li>
+                <li><a href="#">Gdpr comapirasion</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Status</a></li>
+                <li><a href="#">Mobile App</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Resource</h4>
+              <ul>
+                <li><a href="#">Markating-Labirary</a></li>
+                <li><a href="#">Free markating tool</a></li>
+                <li><a href="#">Markating Gresory</a></li>
+                <li><a href="#">International Direction</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Community</h4>
+              <ul>
+                <li><a href="#">Agencies & Freelencers</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Event</a></li>
+              </ul>
+            </div>
+  
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">NewsRoom</a></li>
+                <li><a href="#">Give Where you Live</a></li>
+                <li><a href="#">Annual - Report</a></li>
+                <li><a href="#">carrier</a></li>
+                <li><a href="#">Assesiblity</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br>
+        <hr width="100%"
+        size="1" color="black"
+        noshade>
+        <br />
+        <br>
+        <div id="socialNetwork">
+          <div class="footer-col">
+            <div>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+</body>
+<script src="./index.js"></script>
+
+<script src="/header.js"></script>
+</html>
+<script>
+
+    obj=JSON.parse(localStorage.getItem("login_user")) || {};
+     if(obj.name==undefined){
+       document.querySelector("#sign_out").style.display="none";
+       document.querySelector("#username").style.display="none";
+       document.querySelector("#star").style.display="none";    
+     }else{
+       if(obj.subscriber=="Subscribed"){
+           document.querySelector("#star").style.display="block";
+       }
+       else{           
+           document.querySelector("#star").style.display="none";
+       }
+       
+       document.querySelector("#login").style.display="none";
+       document.querySelector("#register").style.display="none";
+       document.querySelector("#username").style.display="block";
+       document.querySelector("#sign_out").style.display="block";
+       document.querySelector("#username").innerText="Hello, "+obj.name;
+     }
+     
+     sign_out=()=>{
+       obj={}
+       localStorage.setItem("login_user", JSON.stringify(obj));
+       window.location.assign("/index.html");
+     }
+   
+   </script>

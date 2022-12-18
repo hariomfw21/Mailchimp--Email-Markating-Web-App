@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/header.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="/footer.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <!-- <link rel="shortcut icon" href="/fw22_0276/Green Bird Creative Business Logo Design.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="/fw22_0276/fav.png" type="image/x-icon">
+    <title>Creative Studio</title>
+    <link rel="stylesheet" href="./creative.css">
+    <style>
+        /* PlanBox Section */
+        .center {
+            text-align: center;
+        }
+        #planbox ul  li> span:before { content:"\2713\0020"; }
+        #planbox ul  li> span.na:before {
+             /* content: none !important;  */
+             content: "\274c\0020"!important; 
+        }
+        #planbox > h2 {
+            text-align: center;
+            padding-bottom: 40px;
+            padding-top: 10px;
+            font-weight: 300;
+            font-size: 45px;
+        }
+        #planbox .typeOfMemberShip h3 {
+            font-weight: 400;
+            font-size: 20px;
+        }
+        #planbox {
+            padding: 80px 70px;
+            background-color: #f6f6f4;
+            padding-bottom: 5rem;
+            letter-spacing: 0.02em;
+        }
+        #plancards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* margin-bottom: 500px; */
+            background-color: white;
+        }
+
+        .card {
+            padding: 15px 18px 15px 18px;
+            font-size: 1em;
+            color: rgba(36, 28, 21, 0.65);
+            color: #403b3b;
+            border: 1px #cfd8dc solid;
+        }
+        .typeOfMemberShip {
+            padding: 10px 0px;
+        }
+        .membershipPara {
+            font-size: 13px;
+            margin-bottom: 10px;
+            color: rgba(36, 28, 21, 0.65);
+        }
+        .membershipPara ~ p {
+            color: rgba(36, 28, 21, 0.65);
+            font-size: 13px;
+        }
+
+        .price {
+            font-size: 30px;
+            font-weight: 400;
+        }
+        #planbox ul {
+            list-style: none;
+            margin: 15px;
+        }
+        #planbox ul > li span {
+            border-bottom: 1px #403b3b dashed;
+            text-align: justify;
+            font-size: 13px;
+        }
+        #planbox .card ul > li {
+            border-bottom: 1px #cfd8dc solid;
+            margin-bottom: 20px;
+            height: 25px;
+            padding-bottom: 25px;
+            /* border: 1px solid;   */
+        }
+        #planbox .card sup {
+            font-size: 10px;
+        }
+        #planbox .na {
+            color: rgba(36, 28, 21, 0.3);
+        }
+        #noborder {
+            border-bottom: 0px;
+        }
+        #noborder1 {
+            border-bottom: 0px;
+        }
+        #noborder3 {
+            border-bottom: 0px;
+        }
+        #noborder4 {
+            border-bottom: 0px;
+        }
+        #bottompara {
+            /* border: 1px solid; */
+            box-sizing: border-box;
+            font-size: 13px;
+            text-align: center;
+            margin-top: 20px;
+            color: #94a0a5;
+        }
+        #bottompara span {
+            color: #565c5f;
+        }
+        #btmbtn {
+            display: block;
+            margin: auto;
+            margin-top: 25px;
+            padding: 15px 20px;
+            border-radius: 500px;
+            background-color: #ffe01b;
+        }
+        #learnmore {
+            border-bottom: 1px dotted;
+            color: #94a0a5;
+        }
+        #navbtn a {
+            text-decoration: none;
+            color: #403b3b;
+        }
+        #plansBottomHeader {
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 3 00;
+            padding: 0px 500px;
+        }
+        #plancards .card:hover{
+            box-shadow: 0 0 0.625rem -0.125rem hsl(0deg 0% 55% / 75%);
+            cursor: pointer;
+        }
+        
+        .bottompara_btn{
+            margin-top: 40px;
+            background-color: #ffe01b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header  Import -->
+    <div id="Header">
+        <div class="nev-bar">
+            <button onmouseover="openNav()" class="nev-barAncer">Product</button>
+            <button onmouseover="openNavRes()" class="nev-barAncer">
+                Resource
+            </button>
+            <button onmouseover="openNavIns()" class="nev-barAncer">
+                Inspration
+            </button>
+            <button  onclick='window.location.href="/fw22_0276/Subscription Page/pricing.html"'  onmouseover="openNavPri()" class="nev-barAncer">Pricing</button>
+        </div>
+        <!-- <div class="nev-bar">
+            <img src="/pics and logo/Green_Bird_Creative_Business_Logo_Design-removebg-preview (1).png" alt="logo" />
+            <h2>WMB</h2>
+        </div> -->
+        <div onclick='window.location.href="/index.html"'  class="nev-bar">
+            <img style="cursor: pointer;" src="/pics and logo/Green_Bird_Creative_Business_Logo_Design-removebg-preview (1).png" alt="logo" />
+            <h2 style="cursor: pointer;" >WMB</h2>
+        </div>
+
+        <div class="nev-bar">
+            <div>
+                <p></p>&nbsp;&nbsp;Sales:+1 (800) 315-5939</p>
+            </div>
+            <div class="icon-nav">
+                <i style="padding-left: 0px;" class="material-icons">search</i>
+                <i style="padding-left: 0px;" class="material-icons">delete</i>                
+                <img id="star" style="padding-left: 10px;" width="40px" src="/Homepage_Images/star.png" alt="user">
+            </div>
+
+            <!-- Nev-bar login sign up button -->
+
+            <div>
+                <a id="login" href="/fw22_0276/login.html" style="margin-top:0px; padding:4px 8px; background-color: #FFE01B;" class="float_btn graphikWeb">Log In</a>
+                <a id="register" href="/fw22_0276/signUp.html" style="margin-top:0px; padding:4px 8px; background-color: #FFE01B;" class="float_btn graphikWeb">Sign Up</a>
+                
+                <h5 id="username"></h5>                
+                <a  id="sign_out" href="/index.html" onclick="sign_out()" style="margin-top:5px; padding:4px 8px; display: none; display: inline-block;background-color: #FFE01B;" class="float_btn graphikWeb">Log Out</a>
+                
+            </div>
+        </div>
+    </div>
+    <div></div>
+
+    <!--  side nav -->
+
+    <div id="mySidenav" class="sidenav" >
+        <div class="nev-bar">
+            <button onmouseover="openNav()" class="nev-barAncer">Product</button>
+            <button onmouseover="openNavRes()" class="nev-barAncer">
+                Resource
+            </button>
+            <button onmouseover="openNavIns()" class="nev-barAncer">
+                Inspration
+            </button>
+            <button onclick='window.location.href="/fw22_0276/Subscription Page/pricing.html"' onmouseover="openNavPri()" class="nev-barAncer">Pricing</button>
+        </div>
+        <br />
+        <div id="resource-nav">
+            <!-- code in script -->
+            <!-- code in script -->
+            <!-- code in script -->
+            <!-- code in script -->
+        </div>
+    </div>
+    <!-- side nav ^^^^ -->
+    <div id="myinnerreside-nav" class="innerside-nav" onmouseleave="closeInnerNav(),closeNav()">
+        <div id="innerresorce-nav">
+            <ul class="ullist-innernev">
+                <li>
+                    <!-- <a class="innernevAnc" href="#">Website</a> -->
+                    <a class="innernevAnc" href="/MarketingCRM/MarketingCRM.html">Marketing CRM</a>
+                    <p class="innernavp">
+                        Create a free website that comes with built-in markating tool
+                    </p>
+                </li>
+
+                <br />
+
+                <li>
+                    <!-- <a class="innernevAnc" href="#">Online Store</a> -->
+                    <a class="innernevAnc" href="/contentStudio/contentStudio.html">Content Studio</a>
+                    <p class="innernavp">
+                        Get beautiful onbrand design made for you with the power Of AI
+                    </p>
+                </li>
+
+                <br />
+
+                <li>
+                    <a class="innernevAnc" href="#">Dynamic Content</a>
+                    <p class="innernavp">
+                        Pretionlise Individual content Block with You Emails.
+                    </p>
+                </li>
+
+                <br />
+
+                <li>
+                    <a class="innernevAnc" href="#">Subject Line Helper</a>
+                    <p class="innernavp">
+                        Get real-time feedback on how to refine your subject lines.
+                    </p>
+                </li>
+
+                <br />
+
+                <li>
+                    <a class="innernevAnc" href="#">Campaign Templates</a>
+                    <p class="innernavp">
+                        100+ pre-designed email and landing page templates that fit any
+                        message.
+                    </p>
+                </li>
+
+                <br />
+
+                <hr />
+            </ul>
+        </div>
+    </div>
+
+    <!-- Header  End -->
+
+    <div class="cstop">
+        <div id="csbox">
+            <div id="csinbox1">
+                <h1>DIGITAL MARKETING STORAGE</h1>
+                <h2>On-brand marketing assets, every time</h2>
+                <p>Use content studio to sync and manage digital assets including photos, graphics and other marketing
+                    files so your campaigns are consistent.</p>
+                <a href="/fw22_0276/Subscription Page/pricing.html"  onclick="seemore()">Start Building Content</a>
+                <!-- <a onclick="seemore()">Start Building Content</a> -->
+            </div>
+            <div id="csinbox2"><img
+                    src="https://eep.io/images/yzco4xsimv0y/2Qk5spMGPk6pKEZ7QZftjS/5ee1b1974245cdedd663375d61f1585c/Mailchimp-Content-Studio-Hero.png?w=1520&fm=webp&q=70"
+                    alt=""></div>
+        </div>
+    </div>
+    <div class="csmid1">
+        <div id="csinbox1"><img
+                src="https://771811.smushcdn.com/2834171/wp-content/uploads/2022/03/AppStore_Metadata-1-1536x960-1.jpg?lossy=1&strip=1&webp=1"
+                alt=""></div>
+        <div id="csinbox2">
+            <span>New</span>
+            <h2>Stand out with designs made just for you</h2>
+            <p>Our Creative Assistant blends design principles with our smarts to automatically build beautiful,
+                on-brand designs for you in seconds. Choose and edit your favorite options, and let our AI resize them
+                for each marketing channel.</p>
+            <a>Get Your Designs</a>
+        </div>
+    </div>
+    <div class="csmid2">
+        <div id="csinbox1">
+            <h2>Digital asset management for marketers</h2>
+            <p>Upload or sync your digital marketing assets, edit them directly in the content studio, and then use them
+                across all of your marketing campaigns.</p>
+        </div>
+        <div id="csinbox2"><img
+                src="https://eep.io/images/yzco4xsimv0y/O5tcaKX2pDnrTeyACQi1N/51ac6fc6c176ec92f2bdec239b5e8661/105_Creative-Tools_AUI.png?w=760&fm=webp&q=80"
+                alt=""></div>
+    </div>
+
+           <!--   Plan Section 1 -->
+        
+           <div id="planbox">
+            <h2 class="meansWeb">Find the right plan</h2>
+            <div id="plancards">
+            <div class="card">
+                <h3 class="typeOfMemberShip meansWeb">Premium</h3>
+                <p class="membershipPara graphikWeb">
+                Our most advanced tools, unlimited contacts, and priority support;
+                built for teams.
+                </p>
+                <p class="graphikWeb">Starts at</p>
+                <h3 class="price meansWeb"><sup>₹</sup>23,000</h3>
+                <p class="graphikWeb">/month based on 10,000 contacts*</p>
+    
+                <div class="ul graphikWeb">
+                <ul>
+                    <li>
+                    <span>Phone & Priority Support</span>
+                    </li>
+                    <li>
+                    <span>Custom-Coded and Pre-built Email Templates</span>
+                    </li>
+                    <li>
+                    <span>Multivariate and A/B Testing</span>
+                    </li>
+                    <li>
+                    <span>Enhanced Automated Customer Journeys</span>
+                    </li>
+                    <li>
+                    <span> Predictive Segmentation </span>
+                    </li>
+                    <li id="noborder">
+                    <span>Assisted Onboarding</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="typeOfMemberShip meansWeb">Standard</h3>
+                <p class="membershipPara graphikWeb">
+                Sell even more with personalization, optimization tools, and
+                automations.
+                </p>
+                <p class="graphikWeb">Starts at</p>
+                <h3 class="price meansWeb"><sup>₹</sup>1,150</h3>
+                <p class="graphikWeb">/month based on 500 contacts*</p>
+    
+                <div class="ul graphikWeb">
+                <ul>
+                    <li>
+                    <span>24/7 Email & Chat Support</span>
+                    </li>
+                    <li>
+                    <span>Custom-Coded and Pre-built Email Templates</span>
+                    </li>
+                    <li>
+                    <span>Multivariate and A/B Testing</span>
+                    </li>
+                    <li>
+                    <span>Enhanced Automated Customer Journeys</span>
+                    </li>
+                    <li>
+                    <span> Predictive Segmentation </span>
+                    </li>
+                    <li id="noborder1">
+                    
+                    <span class="na">Assisted Onboarding</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="typeOfMemberShip meansWeb">Essentials</h3>
+                <p class="membershipPara graphikWeb">
+                Send the right content at the right time with testing and scheduling
+                features.
+                </p>
+                <p class="graphikWeb">Starts at</p>
+                <h3 class="price meansWeb"><sup>₹</sup>770</h3>
+                <p class="graphikWeb">/month based on 500 contacts*</p>
+    
+                <div class="ul graphikWeb">
+                <ul>
+                    <li>
+                    <span>24/7 Email & Chat Support</span>
+                    </li>
+                    <li>
+                    <span>Pre-built Email Templates</span>
+                    </li>
+                    <li><span>A/B Testing</span></li>
+                    <li>
+                    <span>Basic Automated Customer Journeys</span>
+                    </li>
+                    <li>
+                    
+                    <span class="na"> Predictive Segmentation </span>
+                    </li>
+                    <li id="noborder3">
+                    
+                    <span class="na">Assisted Onboarding</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="typeOfMemberShip meansWeb">Free</h3>
+                <p class="membershipPara graphikWeb">
+                Easily create email campaigns and learn more about your customers.
+                </p>
+                <p class="graphikWeb">Starts at</p>
+                <h3 class="price meansWeb"><sup>₹</sup>0</h3>
+                <p class="graphikWeb">/month based on 500 contacts*</p>
+    
+                <div class="ul graphikWeb">
+                <ul>
+                    <li>
+                    <span>Email support for first 30 days</span>
+                    </li>
+                    <li>
+                    <span>Pre-built Email Templates</span>
+                    </li>
+                    <li>
+                    
+                    <span class="na">A/B Testing</span>
+                    </li>
+                    <li>
+                    
+                    <span class="na">Basic Automated Customer Journeys</span>
+                    </li>
+                    <li>
+                    
+                    <span class="na"> Predictive Segmentation </span>
+                    </li>
+                    <li id="noborder3">
+                    </i
+                    ><span class="na">Assisted Onboarding</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <p id="bottompara" class="graphikWeb">
+            <span> <u>*Overrages</u></span> apply if contact or email send limit is
+            exceeded. Free plan sending will be paused if contact or email send
+            limit is exceeded. <span id="learnmore">Learn more</span>
+            </p>
+            <!-- <button id="btmbtn">See all plan details</button> -->
+            <div class="bottompara center">
+                <a href="/fw22_0276/Subscription Page/pricing.html" class=" bottompara_btn float_btn graphikWeb">See all plan details</a>
+            </div>
+        </div>
+
+
+    <!-- <div id="bigbox">
+        <h1>Find the right plan</h1>
+        <div id="plan">
+            <div id="box1">
+                <h3>Premium</h3>
+                <h6>Our most advanced tools, unlimited contacts, and priority support; built for teams.</h8>
+                <h1>₹23,000</h1>
+                <p>1. Phone & Priority Support</p>
+                <p>2. Custom-Coded and Pre-built Email Templates</p>
+                <p>3. Multivariate and A/B Testing</p>
+                <p>4. Enhanced Automated Customer Journeys</p>
+                <p>5. Predictive Segmentation</p>
+                <p>6. Assisted Onboarding</p> 
+            </div>
+
+            <div id="box1">
+                <h3>Standard</h3>
+                <h6>Sell even more with personalization, optimization tools, and enhanced automations.</h8>
+                <h1>₹1,150</h1>
+                <p>1. 24/7 Email & Chat Support</p>
+                <p>2. Custom-Coded and Pre-built Email Templates</p>
+                <p>3. A/B Testing</p>
+                <p>4. Enhanced Automated Customer Journeys</p>
+                <p>5. Predictive Segmentation</p>
+            </div>
+
+            <div id="box1">
+                <h3>Essentials</h3>
+                <h6>Send the right content at the right time with testing and scheduling features.</h8>
+                <h1>₹770</h1>
+                <p>1. 24/7 Email & Chat Support</p>
+                <p>2. Pre-built Email Templates</p>
+                <p>3. A/B Testing</p>
+                <p>4. Basic Automated Customer Journeys</p>
+                 
+            </div>
+            <div id="box1">
+                <h3>Free</h3>
+                <h6>Easily create email campaigns and learn more about your customers.</h8>
+                <h1>₹0</h1>
+                <p>1. Email support for first 30 days</p>
+                <p>2. Pre-built Email Templates</p>
+            </div>
+        </div>
+        
+        <button id="more" onclick='window.location.href="/fw22_0276/Subscription Page/pricing.html"' >See more</button>
+        
+    </div> -->
+
+    <div class="csmid4">
+        <div id="box">
+            <h3>Upload your images and files</h3>
+            <p>Our file uploader makes it easy to import & store your digital assets in one place.</p>
+        </div>
+        <div id="box">
+            <h3>Repurpose your social media content</h3>
+            <p>Import Instagram and Facebook content to create multichannel messaging.</p>
+        </div>
+        <div id="box">
+            <h3>Add product images from your store</h3>
+            <p>We'll automatically import your images, so you can add them to any campaign.</p>
+        </div>
+        <div id="box">
+            <h3>Find the perfect GIF for your campaign</h3>
+            <p>Use our searchable Giphy library to find the right GIF for any situation.</p>
+        </div>
+        <div id="box">
+            <h3>Create content with Canva</h3>
+            <p>Send designs directly from Canva to your content studio to use in campaigns.</p><a
+                href="https://mailchimp.com/integrations/canva/">Learn more</a>
+        </div>
+        <div id="box">
+            <h3>Enhance with Adobe Photoshop</h3>
+            <p>Sync images from Photoshop to your content studio and make quick updates.</p><a
+                href="https://mailchimp.com/integrations/photoshop/">Learn more</a>
+        </div>
+
+    </div>
+
+    <div class="csmid2">
+        <div id="csinbox1">
+            <h2>Bring all your work together</h2>
+            <p>Organize all your creative digital assets in one Mailchimp account, so you’ll always have access to the
+                files you need. When you're ready to launch a new campaign, our marketing storage platform will have
+                your back.</p>
+        </div>
+        <div id="csinbox2"><img
+                src="https://eep.io/images/yzco4xsimv0y/7vSt50MOWt5wdmLXFZmo4v/8e5c36940e7efc87e8ac4397b9d9691e/106_Creative-Tools_AUI.png?w=760&fm=webp&q=80"
+                alt=""></div>
+    </div>
+    <div class="csmid3">
+        <div id="midbox5">
+            <h2>Content Studio - Benefits</h2>
+            <div id="inbox1">
+                <div id="box1">
+                    <img src="https://eep.io/images/yzco4xsimv0y/2kj7g03Cnm7RnQs96r72YE/5ff511445b5bbdaabc5e97fb7f97960b/Mailchimp-Content-Studio-Manage-All-Your-Assets.png?fm=webp&q=80"
+                        alt="">
+                </div>
+                <div id="box2">
+                    <span>Manage all your digital marketing assets</span>
+                    <p>Storage in marketing is important. Easily store your photos, documents, and other campaign files
+                        in one convenient location, so you’ll always be able to find exactly what you're looking for.
+                        And when you connect your store and social media accounts, we'll pull in all of your product
+                        images for you, too.</p>
+                </div>
+            </div>
+            <hr>
+            <div id="inbox1">
+                <div id="box1">
+                    <img src="https://eep.io/images/yzco4xsimv0y/57XYC7DpZlPKFlj4Z8CRiO/88565f2afb408a95932b02e3c9e278cf/Mailchimp-Content-Studio-Cohesive-Brand-Experience.png?fm=webp&q=80"
+                        alt="">
+                </div>
+                <div id="box2">
+                    <span>Create a cohesive brand experience</span>
+                    <p>Set a default logo to include in each marketing campaign, then re-use your digital assets to keep
+                        all your marketing—across multiple channels—consistent and on-brand.</p>
+                </div>
+            </div>
+            <hr>
+            <div id="inbox1">
+                <div id="box1">
+                    <img src="https://eep.io/images/yzco4xsimv0y/4knnhC5s4ZIXHY7PHTpYQo/5819a182a87e08d0348b92d99c918e3a/Mailchimp-Content-Studio-From-Concept-to-Publish-Quickly.png?fm=webp&q=80"
+                        alt="">
+                </div>
+                <div id="box2">
+                    <span>Quickly go from concept to publish</span>
+                    <p>When you upload your images and other creative assets to our marketing asset management software,
+                        you can add them to any campaign in just a few clicks.</p>
+                </div>
+            </div>
+            <hr>
+            <div id="inbox1">
+                <div id="box1">
+                    <img src="https://eep.io/images/yzco4xsimv0y/oPmNynO3mkJUaKS7GlLGZ/c8e131e83e3742e84e3dfc95eae09f40/Mailchimp-Content-Studio-Collaborate-With-Your-Team.png?fm=webp&q=80"
+                        alt="">
+                </div>
+                <div id="box2">
+                    <span>Collaborate with your whole team</span>
+                    <p>The content studio makes it easy to find, share, and repurpose content, so your team can work on
+                        campaigns together—and everyone stays on the same page.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="csmid2">
+        <div id="csinbox2"><img
+                src="https://eep.io/images/yzco4xsimv0y/3b6OHUxmUtFO05Wk3RFGji/2ae5a5a2198df1e815c3077f9806206f/107_Creative-Tools_AUI.png?w=760&fm=webp&q=80"
+                alt="">
+        </div>
+        <div id="csinbox1">
+            <h2>Storage and editing tools at your fingertips</h2>
+            <p>Customize the look of your marketing assets with beautiful graphics and designs that bring your brand to
+                life. Our content studio includes a built-in photo editor so you can resize your images, add filters and
+                text, adjust brightness and contrast, and a whole lot more.</p>
+        </div>
+    </div>
+    <div class="csls1">
+        <div id="box">
+            <h2>Start building branded content.</h2>
+            <a href="/fw22_0276/signUp.html"  onclick="sign()">Signup</a>
+        </div>
+    </div>
+    <div class="emls2">
+        <div id="lsbox1">
+            <h2>See what else you can do</h2>
+        </div>
+        <div id="lsbox2">
+            <div id="lsinbox1"><img
+                    src="https://eep.io/images/yzco4xsimv0y/bIbQhT0Rbim4og0ewaGEC/6ae2ed280a0ad767447a562f80c6e5ad/email-templates-thumb-1520x855.jpg?w=540&fm=webp&q=80"
+                    alt="">
+                <p>TEMPLATES</p>
+                <a>Build emails and landing pages in minutes</a>
+                <p>Get a head start on your next campaign with pre-designed templates that you can customize and launch
+                    in minutes.</p>
+            </div>
+            <div id="lsinbox1"><img
+                    src="https://eep.io/images/yzco4xsimv0y/6oxGs4glkAysuSXfBcadrH/9e0ff1f8542281f1e72c72f3024f934f/CampaignsOverviewThumbnail-Article.png?w=540&fm=webp&q=80"
+                    alt="">
+                <p>CAMPAIGNS</p>
+                <a>Create better campaigns with Mailchimp</a>
+                <p>Create emails, ads, landing pages, and more without ever leaving Mailchimp.
+                </p>
+            </div>
+            <div id="lsinbox1"><img
+                    src="https://eep.io/images/yzco4xsimv0y/7JJs6OMrvyaWLFyCf7yqjC/955867a2ef706ad28d9dd00cc5abc51f/Integrations_Thumbnail.png?w=540&fm=webp&q=80"
+                    alt="">
+                <p>INTEGRATIONS</p>
+                <a>Apps and tools to do more with Mailchimp</a>
+                <p>Connect your favorite apps and web services to save time and do more with your marketing.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+ <!-- Footer -->
+ <footer style="margin-top: 80px;" class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#">why mailchamp?</a></li>
+            <li><a href="#">Product-Markating</a></li>
+            <li><a href="#">Email-Markating</a></li>
+            <li><a href="#">How we compair</a></li>
+            <li><a href="#">Gdpr comapirasion</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">Mobile App</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resource</h4>
+          <ul>
+            <li><a href="#">Markating-Labirary</a></li>
+            <li><a href="#">Free markating tool</a></li>
+            <li><a href="#">Markating Gresory</a></li>
+            <li><a href="#">International Direction</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#">Agencies & Freelencers</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Event</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">NewsRoom</a></li>
+            <li><a href="#">Give Where you Live</a></li>
+            <li><a href="#">Annual - Report</a></li>
+            <li><a href="#">carrier</a></li>
+            <li><a href="#">Assesiblity</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br>
+    <hr width="100%"
+    size="1" color="black"
+    noshade>
+    <br />
+    <br>
+    <div id="socialNetwork">
+      <div class="footer-col">
+        <div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+<script src="./creative.js"></script>
+
+<script src="/header.js"></script>
+
+</html>
+<script>
+
+    obj=JSON.parse(localStorage.getItem("login_user")) || {};
+     if(obj.name==undefined){
+       document.querySelector("#sign_out").style.display="none";
+       document.querySelector("#username").style.display="none";
+       document.querySelector("#star").style.display="none";    
+     }else{
+       if(obj.subscriber=="Subscribed"){
+           document.querySelector("#star").style.display="block";
+       }
+       else{           
+           document.querySelector("#star").style.display="none";
+       }
+       
+       document.querySelector("#login").style.display="none";
+       document.querySelector("#register").style.display="none";
+       document.querySelector("#username").style.display="block";
+       document.querySelector("#sign_out").style.display="block";
+       document.querySelector("#username").innerText="Hello, "+obj.name;
+     }
+     
+     sign_out=()=>{
+       obj={}
+       localStorage.setItem("login_user", JSON.stringify(obj));
+       window.location.assign("/index.html");
+     }
+   
+   </script>

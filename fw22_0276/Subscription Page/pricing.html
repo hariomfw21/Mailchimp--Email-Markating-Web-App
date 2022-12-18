@@ -4,13 +4,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../Green Bird Creative Business Logo Design.png" type="image/x-icon">
+    <link rel="stylesheet" href="/header.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="/footer.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <!-- <link rel="shortcut icon" href="/fw22_0276/Green Bird Creative Business Logo Design.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="/fw22_0276/fav.png" type="image/x-icon">
     <link rel="stylesheet" href="./pricing.css">
     <title>WMB:Marketing Platform</title>
 </head>
 <body>
-    
+ 
+    <!-- Header  Import -->
+    <div id="Header">
+        <div class="nev-bar">
+            <button onmouseover="openNav()" class="nev-barAncer">Product</button>
+            <button onmouseover="openNavRes()" class="nev-barAncer">
+                Resource
+            </button>
+            <button onmouseover="openNavIns()" class="nev-barAncer">
+                Inspration
+            </button>
+            <button  onclick='window.location.href="/fw22_0276/Subscription Page/pricing.html"'  onmouseover="openNavPri()" class="nev-barAncer">Pricing</button>
+        </div>
+        <!-- <div class="nev-bar">
+            <img src="/pics and logo/Green_Bird_Creative_Business_Logo_Design-removebg-preview (1).png" alt="logo" />
+            <h2>WMB</h2>
+        </div> -->
+        <div onclick='window.location.href="/index.html"'  class="nev-bar">
+            <img style="cursor: pointer;" src="/pics and logo/Green_Bird_Creative_Business_Logo_Design-removebg-preview (1).png" alt="logo" />
+            <h2 style="cursor: pointer;" >WMB</h2>
+        </div>
 
+        <div class="nev-bar">
+            <div>
+                <p></p>&nbsp;&nbsp;Sales:+1 (800) 315-5939</p>
+            </div>
+            <div class="icon-nav">
+                <i style="padding-left: 0px;" class="material-icons">search</i>
+                <i style="padding-left: 0px;" class="material-icons">delete</i>                
+                <img id="star" style="padding-left: 10px;" width="40px" src="/Homepage_Images/star.png" alt="user">
+            </div>
+
+            <!-- Nev-bar login sign up button -->
+
+            <div>
+                <a id="login" href="/fw22_0276/login.html" style="margin-top:0px; padding:4px 8px; background-color: #FFE01B;" class="float_btn graphikWeb">Log In</a>
+                <a id="register" href="/fw22_0276/signUp.html" style="margin-top:0px; padding:4px 8px; background-color: #FFE01B;" class="float_btn graphikWeb">Sign Up</a>
+                
+                <h5 id="username"></h5>                
+                <a  id="sign_out" href="/index.html" onclick="sign_out()" style="margin-top:5px; padding:4px 8px; display: none; display: inline-block;background-color: #FFE01B;" class="float_btn graphikWeb">Log Out</a>
+                
+            </div>
+        </div>
+    </div>
+    <div></div>
+
+    <!--  side nav -->
+
+    <div id="mySidenav" class="sidenav" >
+        <div class="nev-bar">
+            <button onmouseover="openNav()" class="nev-barAncer">Product</button>
+            <button onmouseover="openNavRes()" class="nev-barAncer">
+                Resource
+            </button>
+            <button onmouseover="openNavIns()" class="nev-barAncer">
+                Inspration
+            </button>
+            <button onclick='window.location.href="/fw22_0276/Subscription Page/pricing.html"' onmouseover="openNavPri()" class="nev-barAncer">Pricing</button>
+        </div>
+        <br />
+        <div id="resource-nav">
+            <!-- code in script -->
+            <!-- code in script -->
+            <!-- code in script -->
+            <!-- code in script -->
+        </div>
+    </div>
+    <!-- side nav ^^^^ -->
+    <div id="myinnerreside-nav" class="innerside-nav" onmouseleave="closeInnerNav(),closeNav()">
+        <div id="innerresorce-nav">
+            <ul class="ullist-innernev">
+                <li>
+                    <!-- <a class="innernevAnc" href="#">Website</a> -->
+                    <a class="innernevAnc" href="/MarketingCRM/MarketingCRM.html">Marketing CRM</a>
+                    <p class="innernavp">
+                        Create a free website that comes with built-in markating tool
+                    </p>
+                </li>
+
+                <br />
+
+                <li>
+                    <!-- <a class="innernevAnc" href="#">Online Store</a> -->
+                    <a class="innernevAnc" href="/contentStudio/contentStudio.html">Content Studio</a>
+                    <p class="innernavp">
+                        Get beautiful onbrand design made for you with the power Of AI
+                    </p>
+                </li>
+
+                <br />
+
+                <li>
+                    <a class="innernevAnc" href="#">Dynamic Content</a>
+                    <p class="innernavp">
+                        Pretionlise Individual content Block with You Emails.
+                    </p>
+                </li>
+
+                <br />
+
+                <li>
+                    <a class="innernevAnc" href="#">Subject Line Helper</a>
+                    <p class="innernavp">
+                        Get real-time feedback on how to refine your subject lines.
+                    </p>
+                </li>
+
+                <br />
+
+                <li>
+                    <a class="innernevAnc" href="#">Campaign Templates</a>
+                    <p class="innernavp">
+                        100+ pre-designed email and landing page templates that fit any
+                        message.
+                    </p>
+                </li>
+
+                <br />
+
+                <hr />
+            </ul>
+        </div>
+    </div>
+
+    <!-- Header  End -->
+
+    
     <!-- *********code for mrketing platform*********** -->
     <div id="main_container">
         <div id="main_top">
@@ -662,7 +793,40 @@
     </div>
 
 
+    
+
+
 </body>
 </html>
 
+<script src="/header.js"></script>
 <script src="./pricing.js"></script>
+<script>
+
+    obj=JSON.parse(localStorage.getItem("login_user")) || {};
+     if(obj.name==undefined){
+       document.querySelector("#sign_out").style.display="none";
+       document.querySelector("#username").style.display="none";
+       document.querySelector("#star").style.display="none";    
+     }else{
+       if(obj.subscriber=="Subscribed"){
+           document.querySelector("#star").style.display="block";
+       }
+       else{           
+           document.querySelector("#star").style.display="none";
+       }
+       
+       document.querySelector("#login").style.display="none";
+       document.querySelector("#register").style.display="none";
+       document.querySelector("#username").style.display="block";
+       document.querySelector("#sign_out").style.display="block";
+       document.querySelector("#username").innerText="Hello, "+obj.name;
+     }
+     
+     sign_out=()=>{
+       obj={}
+       localStorage.setItem("login_user", JSON.stringify(obj));
+       window.location.assign("/index.html");
+     }
+   
+   </script>
