@@ -6,7 +6,7 @@ Home page
 
 Product page CRM
 
-![image](https://user-images.githubusercontent.com/110039298/229821833-8cf315a4-36dc-40bb-a47e-c40c938e57ae.png)
+![image](https://user-images.githubusercontent.com/110039298/229822150-0ed4ccd3-1125-41db-9dd0-3b442d3f7b53.png)
 
 Marketing CRm detail page
 
