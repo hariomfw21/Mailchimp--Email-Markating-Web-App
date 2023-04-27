@@ -7,7 +7,7 @@ beautifully designed campaigns, and powerful data analysis.
 
 
 Netlify Link
-<a href="chimerical-lollipop-25cd16.netlify.app/"></a>
+ [chimerical-lollipop-25cd16.netlify.app/](https://chimerical-lollipop-25cd16.netlify.app/index.html)
 
 
 Home page 
