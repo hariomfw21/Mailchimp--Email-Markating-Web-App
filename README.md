@@ -28,6 +28,17 @@ Marketing CRm detail page
 
 ![image](https://user-images.githubusercontent.com/110039298/229821071-48a97fc4-56c3-47dc-98f8-33cec6bd8b64.png)
 
+pricing page
+![image](https://user-images.githubusercontent.com/110039298/234753390-5f37a3b1-3caf-4c36-979d-8b614acc1ec6.png)
+
+
+subscription page
+![image](https://user-images.githubusercontent.com/110039298/234753461-05acc745-fc05-46fa-bf65-dad6e72e3f9a.png)
+
+
+OTP page 
+![image](https://user-images.githubusercontent.com/110039298/234753572-873f3b56-7e7c-435d-a72c-0da5bac98428.png)
+
 
 Footer page
 ![image](https://user-images.githubusercontent.com/110039298/234753130-123d11d5-37cb-418c-a94e-33ba808ec5d8.png)
