@@ -1,4 +1,4 @@
-# dandy-nation-9128
+# Mailchimp 
 
 
 Mailchimp is an all-in-one marketing platform that helps you manage and talk to your clients, customers, and 
